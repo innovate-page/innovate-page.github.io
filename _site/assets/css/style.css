@@ -7126,8 +7126,7 @@ footer.inverse-text address {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 40px;
-  padding: 50px 50px;
+  padding: 100px 200px 100px 200px;
 }
 
 .hero-content {
@@ -7136,7 +7135,7 @@ footer.inverse-text address {
 }
 
 .hero-content h1 {
-  font-size: 36px;
+  font-size: 30px;
   color: #ffffff;
   font-weight: bold;
   margin-bottom: 20px;
@@ -7148,17 +7147,16 @@ footer.inverse-text address {
   align-items: center;
   gap: 15px;
   margin-bottom: 20px;
-  margin-left: 100px;
 }
 
 .sub-wrapper p {
-  font-size: 18px;
+  font-size: 20px;
   margin: 0;
-  max-width: 400px;
+  margin-top: 100px;
 }
 
 .arrow {
-  width: 150px;
+  width: 100px;
   height: auto;
   flex-shrink: 0;
 }
@@ -7166,12 +7164,13 @@ footer.inverse-text address {
 .hero-button {
   background-color: #007bff;
   color: #fff;
-  padding: 12px 24px;
-  border-radius: 8px;
+  padding: 8px 8px;
+  border-radius: 15px;
   text-decoration: none;
   font-weight: bold;
   display: inline-block;
   transition: background-color 0.3s ease;
+  margin-left: 110px;
 }
 
 .hero-button:hover {

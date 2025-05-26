@@ -10,20 +10,7 @@ main_menu:
 
   - text: "Servicios"
     url: "/"
-    menu_type: "megamenu"
-    submenu:
-
-      - text: "Accordion"
-        url: "/elements/accordion"
-
-      - text: "Dividers"
-        url: "/elements/dividers"
-
-      - text: "Lightbox"
-        url: "/elements/lightbox"
-
-      - text: "Tabs"
-        url: "/elements/tabs"
+    menu_type: "dropdown"
 
   - text: "Contáctanos"
     url: "/portfolios/"
