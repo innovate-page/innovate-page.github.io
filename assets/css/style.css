@@ -7126,7 +7126,7 @@ footer.inverse-text address {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 100px 200px 100px 200px;
+  padding: 150px 200px 100px 200px;
 }
 
 .hero-content {
@@ -7138,7 +7138,6 @@ footer.inverse-text address {
   font-size: 30px;
   color: #ffffff;
   font-weight: bold;
-  margin-bottom: 20px;
   line-height: 1.3;
 }
 
@@ -7147,12 +7146,15 @@ footer.inverse-text address {
   align-items: center;
   gap: 15px;
   margin-bottom: 20px;
+  margin-top: -25px;
+  margin-left: -15px;
+  max-width: 600px;
 }
 
 .sub-wrapper p {
   font-size: 20px;
   margin: 0;
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .arrow {
@@ -7179,7 +7181,7 @@ footer.inverse-text address {
 
 .hero-image {
   flex: 1 1 40%;
-  margin-top: 50px;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
 }
