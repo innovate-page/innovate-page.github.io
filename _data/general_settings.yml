@@ -1,7 +1,7 @@
 # General Settings
 title: "Snowlake premium jekyll template"
-email: "tortoizthemes@gmail.com"
-email_2: "support@tortoizthemes.com"
+email: "mloaiza@innovate.pe"
+email_2: "support@tortoizthemes.com" #Por ver si va
 description: >- # this means to ignore newlines until "baseurl:"
   Snowlake is a multi-concept and powerful site template contains 
   rich layouts with possibility of unlimited combinations & beautiful elements.
@@ -11,9 +11,9 @@ black_logo_2x: "/assets/images/logo@2x.png"
 light_logo_1x: "/assets/images/logo-light.png"
 light_logo_2x: "/assets/images/logo-light@2x.png"
 
-address_01: 'Moonshine St. <br>14/05 Light City,<br /> London, United Kingdom'
-phone_number: "+00 (123) 456 78 90"
-copyright_text: "© 2021 Snowlake. All rights reserved."
+address_01: 'Calle 7 de Enero 225,<br /> Lima, Perú'
+phone_number: "+51 954 498 176"
+copyright_text: "© 2025 Innovate. Todos los derechos reservados."
 
 google_analytics:
   enable: false
@@ -42,19 +42,15 @@ social_accounts:
 
 
 external_links:
-  title: "Learn More"
+  title: "Más información"
   links:
     - url: "#"
-      text: "About Us"
+      text: "Inicio"
     - url: "#"
-      text: "Our Story"
+      text: "Nosotros"
     - url: "#"
-      text: "Projects"
+      text: "Servicios"
     - url: "#"
-      text: "Pricing"
-    - url: "#"
-      text: "Features"
-
 
 external_links_02:
   title: "Need Help?"
@@ -86,8 +82,8 @@ external_links_03:
       text: "Process"
 
 footer_newsletter:
-  title: "Our Newsletter"
-  sub_title: "Subscribe to our newsletter to get our news & deals delivered to your inbox!"
+  title: "Contáctanos"
+  sub_title: "Ponte en contactos con nosotros !"
   subscribe_button_text: "Join"
 
 

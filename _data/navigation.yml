@@ -16,6 +16,10 @@ main_menu:
     url: "/portfolios/"
     menu_type: "dropdown"
 
+  - text: "ES | EN"
+    url: "/#"
+    menu_type: "dropdown"
+
   # - text: "Blog"
   #   url: "/"
   #   submenu:
