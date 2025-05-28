@@ -1366,6 +1366,7 @@ button.hamburger.animate.active:after {
 /*  12. WRAPPERS
 /*-----------------------------------------------------------------------------------*/
 .white-wrapper {
+    margin-top: -100px;
     background-color: #fff !important;
 }
 .light-wrapper {
@@ -2304,13 +2305,15 @@ ol {
 /*-----------------------------------------------------------------------------------*/
 .clients img {
     opacity: 0.8;
-    -webkit-transition: all 200ms ease-in-out;
-    -o-transition: all 200ms ease-in-out;
-    transition: all 200ms ease-in-out;
+    filter: grayscale(100%);
+    transition: all 300ms ease-in-out;
 }
+
 .clients img:hover {
     opacity: 1;
+    filter: grayscale(0%);
 }
+
 /*-----------------------------------------------------------------------------------*/
 /*  28. FIGURE
 /*-----------------------------------------------------------------------------------*/
@@ -7190,4 +7193,28 @@ footer.inverse-text address {
 .hero-image img {
   max-width: 100%;
   border-radius: 8px;
+}
+
+/*Carousel Botones Nuevo*/
+
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.custom-owl-prev,
+.custom-owl-next {
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  width: 60px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

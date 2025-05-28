@@ -20,13 +20,13 @@ three_columns_area:
 
     - title: "IA y Aprendizaje Automático"
       description: "Soluciones de IA y Aprendizaje Automático que convierten tus datos en decisiones inteligentes."
-      image: "/assets/images/concept/concept14@2x.png"
+      image: "/assets/images/hero/IA_home.png"
       button_text: "Conoce más >"
       button_url: "#"
 
     - title: "Servicios en la Nube"
       description: "Ofrecemos servicios en la nube que optimizan procesos y aceleran el crecimiento de tu negocio."
-      image: "/assets/images/concept/concept19@2x.png"
+      image: "/assets/images/hero/Cloud_Service.png"
       button_text: "Conoce más >"
       button_url: "#"
 
@@ -89,7 +89,7 @@ blogs_area:
 
 testimonials_area:
   enable: true
-  title: "Happy Customers"
+  title: "Nuestros Clientes"
   sub_title: "Customer satisfaction is our major goal. See what our customers are saying about us."
   image: "/assets/images/concept/concept16@2x.png"
   testimonials:
@@ -220,7 +220,7 @@ faq_area:
       </div>
     </div>
     {% endif %}
-    {% assign colmns_data_one = page.two_columns_one_area %}
+    <!-- {% assign colmns_data_one = page.two_columns_one_area %}
     {% if colmns_data_one.enable %}
     <div class="two-columns-one">
       <div class="space140"></div>
@@ -231,7 +231,6 @@ faq_area:
               <img src="{{colmns_data_one.image}}"  alt="{{colmns_data_one.title}}"/>
             </figure>
           </div>
-          <!--/column -->
           {% endif %}
           <div class="space20 d-md-none"></div>
           <div class="space50 d-none d-md-block d-lg-none"></div>
@@ -296,9 +295,9 @@ faq_area:
           </div>
         </div>
     </div>  
-    {% endif %}
+    {% endif %} -->
   </div>
-  {% if page.video_area.enable %}
+  <!-- {% if page.video_area.enable %}
   <div class="video-area">
   <div class="wrapper image-wrapper bg-image gradient-overlay inverse-text" data-image-src="{{page.video_area.image}}">
     <div class="container inner pt-140 pb-140 text-center">
@@ -316,8 +315,8 @@ faq_area:
     </div>
   </div>
   </div>
-  {% endif %}
-   {% if page.blogs_area.enable %}
+  {% endif %} -->
+   <!-- {% if page.blogs_area.enable %}
     <div class="wrapper light-wrapper">
       <div class="container inner">
         <div class="row">
@@ -345,12 +344,10 @@ faq_area:
             </div>
             {% endfor %}
           </div>
-          <!-- /.owl-carousel -->
         </div>
-        <!-- /.grid-view -->
       </div>
     </div>
-    {% endif %}
+    {% endif %} -->
     {% if page.testimonials_area.enable %}
     <div class="wrapper white-wrapper inner">
       <div class="container">
@@ -361,14 +358,14 @@ faq_area:
                 {{page.testimonials_area.title}}
               </h2>
             </div>
-            <div class="space10"></div>
+            <!-- <div class="space10"></div>
             <h3 class="display-3 text-center">
                {{page.testimonials_area.sub_title}}
             </h3>
-            <div class="space40"></div>
+            <div class="space40"></div> -->
           </div>
         </div>
-        <div class="row align-items-center">
+        <!-- <div class="row align-items-center">
           {% if page.testimonials_area.image %}
           <div class="col-lg-6 pr-60 pr-md-15">
             <figure><img src="{{page.testimonials_area.image}}"  alt="{{page.testimonials_area.title}}"/></figure>
@@ -393,7 +390,7 @@ faq_area:
               {% endfor %}
             </div>
           </div>
-        </div>
+        </div> -->
         {% if page.clients_carousel.enable %}
         <div class="space80"></div>
          {% include clients_carousel.html %}
@@ -401,7 +398,7 @@ faq_area:
       </div>
     </div>
     {% endif%}
-    <div class="wrapper light-wrapper">
+    <!-- <div class="wrapper light-wrapper">
       <div class="container inner">
         {% assign pricing_data = page.pricing_table %}
         {% if pricing_data.enable %}
@@ -416,7 +413,6 @@ faq_area:
              <a href="{{pricing_data.pricing_url}}" class="btn">See All Prices</a>
             {% endif %}
           </div>
-          <!--/column -->
           <div class="space70 d-none d-md-block d-lg-none"></div>
           <div class="space20 d-md-none"></div>
           <div class="col-lg-7">
@@ -450,8 +446,8 @@ faq_area:
         </div>
        {% endif %}
       </div>
-    </div>
-    {% if page.faq_area.enable %}
+    </div> -->
+    <!-- {% if page.faq_area.enable %}
     <div class="wrapper light-wrapper inner-bottom">
         <div class="container">
             <div class="row">

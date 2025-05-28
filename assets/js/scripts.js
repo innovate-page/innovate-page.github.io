@@ -298,6 +298,15 @@ $(document).ready(function() {
 		var number = $(this).index();
 		$owlmain.data("owl.carousel").to(number, 300, true);
 	});
+
+	$('.custom-owl-prev').click(function () {
+		$('.owl-carousel.clients').trigger('prev.owl.carousel');
+	});
+	$('.custom-owl-next').click(function () {
+		$('.owl-carousel.clients').trigger('next.owl.carousel');
+	});
+
+
 	/*-----------------------------------------------------------------------------------*/
 	/*	LIGHTGALLERY
 	/*-----------------------------------------------------------------------------------*/
