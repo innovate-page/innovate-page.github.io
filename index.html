@@ -6,53 +6,52 @@ custom_font: font2
 
 hero_area:
   enable: true
-  hero_image: "/assets/images/hero/hero_office.jpg"
-  title: "Transformación digital que<br>impulsa a las organizaciones"
-  sub_title: "Convertimos tus desafíos en<br>soluciones tecnológicas que escalan"
+  hero_image: "/assets/innovate/images/home/office.jpg"
+  title: "Transformación digital que impulsa a las organizaciones"
+  sub_title: "Convertimos tus desafíos en soluciones tecnológicas que escalan"
   btn_text: "Descubre cómo"
   btn_url: "#"
-
 three_columns_area:
   enable: true
-  title: "Innovamos contigo"
-  sub_title: "En Innovate ofrecemos soluciones inteligentes diseñadas para escalar, proteger y transformar tu negocio con tencología de vanguardia."
+  title: "Innovamos Contigo"
+  sub_title: "En Innovate ofrecemos soluciones integrales diseñadas para escalar, proteger y transformar tu negocio con tecnología de vanguardia."
   services:
 
     - title: "IA y Aprendizaje Automático"
       description: "Soluciones de IA y Aprendizaje Automático que convierten tus datos en decisiones inteligentes."
-      image: "/assets/images/hero/IA_home.png"
-      button_text: "Conoce más >"
+      image: "/assets/innovate/images/home/ia.png"
+      button_text: "Conócenos más >"
       button_url: "#"
 
     - title: "Servicios en la Nube"
       description: "Ofrecemos servicios en la nube que optimizan procesos y aceleran el crecimiento de tu negocio."
-      image: "/assets/images/hero/Cloud_Service.png"
-      button_text: "Conoce más >"
+      image: "/assets/innovate/images/home/cloud_service.png"
+      button_text: "Conócenos más >"
       button_url: "#"
 
     - title: "Consultoría Tecnológica"
       description: "Brindamos consultoría tecnológica para guiar a tu negocio en sus decisiones estratégicas y maximizar su potencial digital."
-      image: "/assets/images/concept/concept18@2x.png"
-      button_text: "Conoce más >"
+      image: "/assets/innovate/images/home/technology_consulting.png"
+      button_text: "Conócenos más >"
       button_url: "#"
 
 two_columns_one_area:
   enable: true
-  title: "How It Works?"
-  sub_title: "Find out everything you need about creating a business process model."
+  title: "Capacidades Tecnológica"
+  sub_title: "Contamos con un conjunto de capacidades clave que impulsan la transformación digital."
   image: "/assets/images/concept/concept15@2x.png"
   lists:
 
-    - title: "Creative Ideas"
+    - title: "Digital Experience"
       description: "Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras."
 
-    - title: "Magic Touch"
+    - title: "Data & Analytics"
       description: "Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras."
 
-    - title: "Data Analysis"
+    - title: "Microfrontend Architecture"
       description: "Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras."
 
-    - title: "Finalize Product"
+    - title: "Enterprise Capabilities"
       description: "Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras."
 
 two_columns_two_area: 
@@ -89,8 +88,8 @@ blogs_area:
 
 testimonials_area:
   enable: true
-  title: "Nuestros Clientes"
-  sub_title: "Customer satisfaction is our major goal. See what our customers are saying about us."
+  title: "Clientes"
+  sub_title: "Estas organizaciones han confiado en nosotros para escalar sus soluciones, mejorar su eficiencia y acelerar su innovación."
   image: "/assets/images/concept/concept16@2x.png"
   testimonials:
 
@@ -176,11 +175,11 @@ faq_area:
 <div class="wrapper dark-wrapper">
   <div class="rev_slider_wrapper fullwidth-container">
     <section class="hero-wrapper">
-      <div class="hero-container">
+      <div class="hero-container container">
         <div class="hero-content">
           <h1>{{ page.hero_area.title }}</h1>
           <div class="sub-wrapper">
-            <img src="/assets/images/hero/arrow.svg" class="arrow" alt="Flecha decorativa">
+            <img src="/assets/innovate/images/home/arrow.svg" class="arrow" alt="Flecha decorativa">
             <p>{{ page.hero_area.sub_title }}</p>
           </div>
           <a href="{{ page.hero_area.btn_url }}" class="hero-button">{{ page.hero_area.btn_text }}</a>
@@ -220,7 +219,7 @@ faq_area:
       </div>
     </div>
     {% endif %}
-    <!-- {% assign colmns_data_one = page.two_columns_one_area %}
+    {% assign colmns_data_one = page.two_columns_one_area %}
     {% if colmns_data_one.enable %}
     <div class="two-columns-one">
       <div class="space140"></div>
@@ -255,7 +254,7 @@ faq_area:
         </div>
     </div>
     {% endif %}
-    {% assign columns_data_two = page.two_columns_two_area %}
+    <!-- {% assign columns_data_two = page.two_columns_two_area %}
     {% if columns_data_two.enable %}
     <div class="two-columns-two">
       <div class="space140"></div>
@@ -358,11 +357,11 @@ faq_area:
                 {{page.testimonials_area.title}}
               </h2>
             </div>
-            <!-- <div class="space10"></div>
+            <div class="space10"></div>
             <h3 class="display-3 text-center">
                {{page.testimonials_area.sub_title}}
             </h3>
-            <div class="space40"></div> -->
+            <div class="space40"></div>
           </div>
         </div>
         <!-- <div class="row align-items-center">
@@ -485,11 +484,10 @@ faq_area:
                         </div>
                         {% endfor %}
                     </div>
-                    <!-- /.accordion-wrapper -->
                 </div>
             </div>
         </div>
     </div>
-    {% endif %}
+    {% endif %} -->
 </div>
 {% include footer_3.html light_logo="true" %}
