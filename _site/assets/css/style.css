@@ -383,8 +383,8 @@ h6.text-uppercase,
     color: #808080 !important;
 }
 .inner {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 .inner-top {
     padding-top: 6rem;
@@ -1353,6 +1353,7 @@ button.hamburger.animate.active:after {
 .boxed:not(.list-view) .box.p-30 .post-slider {
     margin: -1.5rem -1.5rem 1.5rem -1.5rem;
 }
+
 .grid-view .post {
     margin-bottom: 3rem;
 }
@@ -7282,4 +7283,12 @@ footer.inverse-text address {
   .custom-owl-next {
     right: 0;
   }
+}
+
+.post-slider .owl-carousel .owl-item img {
+  width: auto !important;
+  max-height: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
