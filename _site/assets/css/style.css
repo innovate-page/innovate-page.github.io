@@ -7317,8 +7317,6 @@ footer.inverse-text address {
   display: flex;
   justify-content: center;  /* centra horizontalmente */
   align-items: center;      /* centra verticalmente */
-<<<<<<< HEAD
-=======
 }
 
 .img-responsive-svg {
@@ -7362,5 +7360,4 @@ footer.inverse-text address {
 .custom-owl-prev:hover,
 .custom-owl-next:hover {
   opacity: 1;
->>>>>>> 4f8c76711e962c25ad4edb9c18a8a864cbea06ab
 }

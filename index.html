@@ -3,22 +3,9 @@ layout: default
 title: Innovate
 custom_css: purple
 custom_font:
-custom_font:
 
-slider_area:
 slider_area:
   enable: true
-  title: "Impulsamos tu crecimiento con tecnología inteligente"
-  sub_title: "Impulsamos la transformación digital de tu empresa con soluciones innovadoras, desarrollo de software a medida y servicios de IA que generan valor real."
-  image: "/assets/images/art/chatbot_v2.gif"
-  bg_image: "/assets/innovate/images/home/office.jpg"
-  image_class: "grayscale-image"
-  buttons:
-    - text: "Innovate ahora"
-      url: "#"
-      icon: "jam jam-lightbulb"
-
-features_area:
   title: "Impulsamos tu crecimiento con tecnología inteligente"
   sub_title: "Impulsamos la transformación digital de tu empresa con soluciones innovadoras, desarrollo de software a medida y servicios de IA que generan valor real."
   image: "/assets/images/art/chatbot_v2.gif"
@@ -34,20 +21,15 @@ features_area:
   title: "Innovamos Contigo"
   sub_title: "En Innovate ofrecemos soluciones integrales diseñadas para escalar, proteger y transformar tu negocio con tecnología de vanguardia."
   features:
-  features:
     - title: "IA y Aprendizaje Automático"
-      image: "/assets/innovate/images/home/ia.png"
       image: "/assets/innovate/images/home/ia.png"
       description: "Soluciones de IA y Aprendizaje Automático que convierten tus datos en decisiones inteligentes."
 
     - title: "Servicios en la Nube"
       image: "/assets/innovate/images/home/cloud_service.png"
-      image: "/assets/innovate/images/home/cloud_service.png"
       description: "Ofrecemos servicios en la nube que optimizan procesos y aceleran el crecimiento de tu negocio."
 
     - title: "Consultoría Tecnológica"
-      image: "/assets/innovate/images/home/consulting.png"
-      description: "Contamos con un conjunto de capacidades clave que impulsan la transformación digital."
       image: "/assets/innovate/images/home/consulting.png"
       description: "Contamos con un conjunto de capacidades clave que impulsan la transformación digital."
 
@@ -55,33 +37,10 @@ video_area:
   enable: true
   title: "Capacidades Tecnológicas"
   sub_title: "Contamos con un conjunto de capacidades clave que impulsan la transformación digital."
-  vimeo_video_id: "165101721"
-
-two_coumns_one:
-  title: "Capacidades Tecnológicas"
-  sub_title: "Contamos con un conjunto de capacidades clave que impulsan la transformación digital."
-  vimeo_video_id: "165101721"
+  vimeo_video_id: "1089160584"
 
 two_coumns_one:
   enable: true
-  title: "Por qué elegirnos?"
-  sub_title: "Aquí hay algunas razones por las que nuestros clientes nos eligen."
-  image: "/assets/images/art/cx.gif"
-  image_class: "grayscale-image"
-  lists:
-    - title: "DevOps as a Service"
-      description: |
-        Transformamos su entrega de software con nuestro servicio integral de DevOps. Nuestro equipo de expertos implementa y gestiona toda su cadena de herramientas DevOps
-
-    - title: "Cloud Journey"
-      description: |
-        Los acompañamos en cada paso de su transformación hacia la nube, desde la estrategia inicial hasta la optimización continua.
-
-    - title: "Customer Experience (CX)"
-      description: |
-        Creamos experiencias digitales excepcionales que conectan con sus clientes.
-
-two_coumns_two:
   title: "Por qué elegirnos?"
   sub_title: "Aquí hay algunas razones por las que nuestros clientes nos eligen."
   image: "/assets/images/art/cx.gif"
@@ -118,187 +77,221 @@ two_coumns_two:
 ---
 
 <div class="content-wrapper">
-{% include header.html extra_class="absolute transparent inverse-text" light_logo="true" container_class="container" %}
-{% if page.slider_area.enable %}
-<div class="wrapper image-wrapper bg-image page-title-wrapper inverse-text" data-image-src="{{page.slider_area.bg_image}}">
-    <div class="container inner pb-100">
-      <div class="space100"></div>
-      <div class="row">
-        <div class="col-lg-7 col-xl-6">
-          {% if page.slider_area.title %}
-          <h1 class="display-1" data-aos="fade-up" data-aos-delay="800">{{page.slider_area.title}}</h1>
-          <div class="space10"></div>
-          {% endif %}
-          {% if page.slider_area.sub_title %}
-          <p class="lead larger" data-aos="fade-up" data-aos-delay="1300">{{page.slider_area.sub_title}}</p>
-          <div class="space25"></div>
-          {% endif %}
-          {% for buttons in page.slider_area.buttons %}
-          <div class="d-inline-block" data-aos="fade-up" data-aos-delay="1800">
-            <a href="{{buttons.url}}" class="btn btn-l btn-white btn-strong-hover btn-icon btn-icon-left mr-10">
-            	<i class="{{buttons.icon}}"></i> {{buttons.text}}
-            </a>
+  {% include header.html extra_class="absolute transparent inverse-text" light_logo="true" container_class="container" %}
+  <!-- INI - if page.slider_area.enable -->
+  {% if page.slider_area.enable %}
+    <div class="wrapper image-wrapper bg-image page-title-wrapper inverse-text" data-image-src="{{page.slider_area.bg_image}}">
+      <div class="container inner pb-100">
+        <div class="space100"></div>
+        <div class="row">
+          <div class="col-lg-7 col-xl-6">
+            <!-- INI - if page.slider_area.title -->
+            {% if page.slider_area.title %}
+              <h1 class="display-1" data-aos="fade-up" data-aos-delay="800">{{page.slider_area.title}}</h1>
+              <div class="space10"></div>
+            {% endif %}
+            <!-- FIN - if page.slider_area.title -->
+            
+            <!-- INI - if page.slider_area.sub_title -->
+            {% if page.slider_area.sub_title %}
+              <p class="lead larger" data-aos="fade-up" data-aos-delay="1300">{{page.slider_area.sub_title}}</p>
+              <div class="space25"></div>
+            {% endif %}
+            <!-- FIN - if page.slider_area.sub_title -->
+
+            <!-- INI - FOR page.slider_area.buttons -->
+            {% for buttons in page.slider_area.buttons %}
+              <div class="d-inline-block" data-aos="fade-up" data-aos-delay="1800">
+                <a href="{{buttons.url}}" class="btn btn-l btn-white btn-strong-hover btn-icon btn-icon-left mr-10">
+                  <i class="{{buttons.icon}}"></i> {{buttons.text}}
+                </a>
+              </div>
+            {% endfor %}
+            <!-- FIN - FOR page.slider_area.buttons -->
           </div>
-          {% endfor %}
         </div>
       </div>
-    </div>
-    <div class="divider"><svg xmlns="http://www.w3.org/2000/svg" class="fill-light-wrapper" preserveAspectRatio="none" viewBox="0 0 1070 52">
-        <path d="M0,52V0S247,91,505,32c261.17-59.72,565-13,565-13V52Z" /></svg></div>
-   </div>
-  {% if page.slider_area.image %}
-  <div class="wrapper overflow-top bleed-l  d-none d-lg-block">
-    <div class="container text-right">
-      <div class="row" data-aos="fade-up" data-aos-delay="300">
-        <div class="col-lg-5 offset-lg-7 col-xl-4 offset-xl-7">
-          <figure>
-            <img src="{{page.slider_area.image}}" alt="{{page.slider_area.title}}" class="{{page.slider_area.image_class}}"/>
-          </figure>
-        </div>
-      </div>
-    </div>
-</div>
-{% endif %}
-{% endif %}
-<div class="wrapper light-wrapper">
-  <div class="container inner">
-  	{% if page.features_area.enable %}
-    <div class="features-area">
-        <div class="row">
-        	<div class="col-md-7 mx-auto">
-		        <h2 class="title-color color-gray text-center">{{page.features_area.title}}</h2>
-				<h3 class="display-3 text-center">{{page.features_area.sub_title}}</h3>
-				<div class="space40"></div>
-        	</div>
-        </div>	
-		<div class="row gutter-60 text-center">
-  {% for features in page.features_area.features %}
-  <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-    <div class="feature-image mb-30">
-      <img src="{{features.image}}" alt="{{features.title}}" class="img-fluid" style="max-height: 120px;">
-      <!--span class="step">{{forloop.index}}</span-->
-    </div>
-    <h5 style="font-weight: bold;">{{features.title}}</h5>
-    <p>{{features.description}}</p>
-  </div>
-  {% endfor %}
-</div>
-    </div>
-    {% endif %}
-
-    
-
-    {% if page.video_area.enable %}
-    <div class="video-area">
-        <div class="row">
-        	<div class="col-md-7 mx-auto">
-		        <div class="space150"></div>
-				<h2 class="title-color color-gray text-center">{{page.video_area.title}}</h2>
-				<h3 class="display-3 mb-0 text-center">{{page.video_area.sub_title}}</h3>
-        	</div>
-        </div>
-
-		<!--div class="space50"></div>
-		<div class="row" data-aos="fade-up" data-aos-delay="300">
-		  <div class="col-lg-10 offset-lg-1">
-		    <div class="player" data-plyr-provider="vimeo" data-plyr-embed-id="{{page.video_area.vimeo_video_id}}"></div>
-		  </div>
-		</div-->
-<div class="space50"></div>
-<div class="row">
-      <div class="col-md-12 col-lg-12 center-content">
-        <div class="center-content">
-          <div class="item pl-15 pr-15"><img src="/assets/images/art/capacidades.png" alt="" /></div>
-          </a>
-        </div>
-        <!-- /.widget -->
+      <div class="divider"><svg xmlns="http://www.w3.org/2000/svg" class="fill-light-wrapper" preserveAspectRatio="none" viewBox="0 0 1070 52">
+        <path d="M0,52V0S247,91,505,32c261.17-59.72,565-13,565-13V52Z" /></svg>
       </div>
     </div>
 
-    </div>
+    <!-- INI - if page.slider_area.image -->
+    {% if page.slider_area.image %}
+      <div class="wrapper overflow-top bleed-l  d-none d-lg-block">
+        <div class="container text-right">
+          <div class="row" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-lg-5 offset-lg-7 col-xl-4 offset-xl-7">
+              <figure>
+                <img src="{{page.slider_area.image}}" alt="{{page.slider_area.title}}" class="{{page.slider_area.image_class}}"/>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
     {% endif %}
-    {% if page.two_coumns_one.enable %}
-    <div class="two-column-one">
-    <div class="row">
-    <div class="col-md-7 mx-auto">
-	    <div class="space180"></div>
-		<h2 class="title-color color-gray text-center">{{page.two_coumns_one.title}}</h2>
-		<h3 class="display-3 mb-0 text-center">{{page.two_coumns_one.sub_title}}</h3>
-		<div class="space50"></div>
+    <!-- FIN - if page.slider_area.image -->
+  {% endif %}
+  <!-- FIN - if page.slider_area.enable -->
+  
+  <!-- INI - BODY -->
+  <div class="wrapper light-wrapper">
+    <div class="container inner">
+      <!-- INI - if page.features_area.enable -->
+  	  {% if page.features_area.enable %}
+        <div class="features-area">
+          <div class="row">
+        	  <div class="col-md-7 mx-auto">
+		          <h2 class="title-color color-gray text-center">{{page.features_area.title}}</h2>
+				      <h3 class="display-3 text-center">{{page.features_area.sub_title}}</h3>
+				      <div class="space40"></div>
+        	  </div>
+          </div>	
+		      <div class="row gutter-60 text-center">
+            <!-- INI - for features in page.features_area.features -->
+            {% for features in page.features_area.features %}
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-image mb-30">
+                  <img src="{{features.image}}" alt="{{features.title}}" class="img-fluid" style="max-height: 120px;">
+                  <!--span class="step">{{forloop.index}}</span-->
+                </div>
+                <h5 style="font-weight: bold;">{{features.title}}</h5>
+                <p>{{features.description}}</p>
+              </div>
+            {% endfor %}
+            <!-- FIN - for features in page.features_area.features -->
+          </div>
+        </div>
+      {% endif %}
+      <!-- FIN - if page.features_area.enable -->
+      
+      <div class="space100"></div>
+      <!-- INI - Imagen Capacidades -->
+      <!--div class="row justify-content-center align-items-center">
+        <div class="col-auto">
+          <img src="{{relative_url}}/assets/images/art/capacidades.svg" alt="" class="img-responsive-svg"/>
+        </div>
+      </div-->
+
+      {% if page.video_area.enable %}
+        <div class="video-area">
+          <div class="row">
+            <div class="col-md-7 mx-auto">
+              <div class="space150"></div>
+              <h2 class="title-color color-gray text-center">{{page.video_area.title}}</h2>
+              <h3 class="display-3 mb-0 text-center">{{page.video_area.sub_title}}</h3>
+            </div>
+          </div>
+          <div class="space50"></div>
+          <div class="row" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-lg-10 offset-lg-1">
+              <div class="player" data-plyr-provider="vimeo" data-plyr-embed-id="{{page.video_area.vimeo_video_id}}" data-autoplay="true" data-plyr-muted="true"></div>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+      
+      <!-- FIN - Imagen Capacidades -->
+
+      <!-- INI - if page.two_coumns_one.enable-->
+      {% if page.two_coumns_one.enable %}
+        <div class="two-column-one">
+          <div class="row">
+            <div class="col-md-7 mx-auto">
+              <div class="space100"></div>
+                <h2 class="title-color color-gray text-center">{{page.two_coumns_one.title}}</h2>
+                <h3 class="display-3 mb-0 text-center">{{page.two_coumns_one.sub_title}}</h3>
+              <div class="space50"></div>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <!-- INI - if page.two_coumns_one.image -->
+            {% if page.two_coumns_one.image %}
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                <figure>
+                  <img src="{{page.two_coumns_one.image}}" alt="{{page.two_coumns_one.title}}" class="{{page.slider_area.image_class}}"/>
+                </figure>
+              </div>
+            {% endif %}
+            <!-- FIN - if page.two_coumns_one.image -->
+            <div class="space40 d-lg-none"></div>
+            <div class="col-lg-6 pl-60 pl-md-15">
+              <!-- INI - for list in page.two_coumns_one.lists -->
+              {% for list in page.two_coumns_one.lists %}
+                <div data-aos="fade-up" data-aos-delay="800">
+                  <h4>{{list.title}}</h4>
+                  <p>{{list.description}}</p>
+                </div>
+              {% endfor %}
+              <!-- FIN - for list in page.two_coumns_one.lists -->
+            </div>
+          </div>
+        </div>
+      {% endif %}
+      <!-- FIN - if page.two_coumns_one.enable-->
+
+      <!-- INI - if page.two_coumns_two.enable -->
+      {% if page.two_coumns_two.enable %}
+        <div class="two-column-two">
+	        <div class="space150"></div>
+	        <div class="row align-items-center">
+            <!-- INI - if page.two_coumns_two.image -->
+	          {% if page.two_coumns_two.image %}
+	            <div class="col-lg-6 order-lg-2" data-aos="fade-up" data-aos-delay="300">
+	              <figure>
+                  <img src="{{page.two_coumns_two.image}}" alt="{{page.two_coumns_two.title}}" class="{{page.slider_area.image_class}}"/>
+                </figure>
+	            </div>
+	          {% endif %}
+            <!-- FIN - if page.two_coumns_two.image -->
+	          <div class="space40 d-lg-none"></div>
+	          <div class="col-lg-6 pr-60 pr-md-15">
+              <!-- INI - for list in page.two_coumns_two.lists -->
+	  	        {% for list in page.two_coumns_two.lists %}
+	              <div data-aos="fade-up" data-aos-delay="800">
+	                <h4>{{list.title}}</h4>
+	                <p>{{list.description}}</p>
+	              </div>
+	              <div class="space30"></div>
+              {% endfor %}
+              <!-- FIN - for list in page.two_coumns_two.lists -->
+	          </div>
+	        </div>
+        </div>
+      {% endif %}
+      <!-- FIN - if page.two_coumns_two.enable -->
     </div>
-    </div>
-	<div class="row align-items-center">
-	  {% if page.two_coumns_one.image %}
-	  <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-	    <figure><img src="{{page.two_coumns_one.image}}" alt="{{page.two_coumns_one.title}}" class="{{page.slider_area.image_class}}"/></figure>
-	  </div>
-	  {% endif %}
-	  <div class="space40 d-lg-none"></div>
-	  <div class="col-lg-6 pl-60 pl-md-15">
-	  {% for list in page.two_coumns_one.lists %}
-	    <div data-aos="fade-up" data-aos-delay="800">
-	      <h4>{{list.title}}</h4>
-	      <p>{{list.description}}</p>
-	    </div>
-       {% endfor %}
-	  </div>
-	</div>
-	<!--/.row -->
-    </div>
-    {% endif %}
-    {% if page.two_coumns_two.enable %}
-    <div class="two-column-two">
-	<div class="space150"></div>
-	<div class="row align-items-center">
-	  {% if page.two_coumns_two.image %}
-	  <div class="col-lg-6 order-lg-2" data-aos="fade-up" data-aos-delay="300">
-	    <figure><img src="{{page.two_coumns_two.image}}" alt="{{page.two_coumns_two.title}}" class="{{page.slider_area.image_class}}"/></figure>
-	  </div>
-	  {% endif %}
-	  <div class="space40 d-lg-none"></div>
-	  <div class="col-lg-6 pr-60 pr-md-15">
-	  	{% for list in page.two_coumns_two.lists %}
-	    <div data-aos="fade-up" data-aos-delay="800">
-	      <h4>{{list.title}}</h4>
-	      <p>{{list.description}}</p>
-	    </div>
-	    <div class="space30"></div>
-        {% endfor %}
-	  </div>
-	  <!--/column -->
-	</div>
-	<!--/.row -->
-    </div>
-    {% endif %}
-     
   </div>
-</div>
-<!-- INI - Carousel de Clientes -->
-<div class="carousel-wrapper d-flex align-items-center">
-  <div class="container inner">
-    <h2 class="section-title mb-40 text-center">Nuestros clientes</h2>
-    <button class="custom-owl-prev">‹</button>
-    <div class="carousel owl-carousel clients" data-margin="30" data-loop="true" data-dots="false" data-autoplay="true" data-autoplay-timeout="3000" data-responsive='{"0":{"items": "2"}, "768":{"items": "4"}, "992":{"items": "5"}, "1140":{"items": "6"}}'>
-      <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/1.png" alt="" /></div>
-      <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/2.png" alt="" /></div>
-      <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/3.png" alt="" /></div>
-      <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/4.png" alt="" /></div>
-      <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/5.png" alt="" /></div>
-      <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/6.png" alt="" /></div>
-      <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/7.png" alt="" /></div>
-      <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/8.png" alt="" /></div>
-      <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/9.png" alt="" /></div>
-      <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/10.png" alt="" /></div>
-      <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/11.png" alt="" /></div>
-      <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/12.png" alt="" /></div>
-      <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/13.png" alt="" /></div>
-      <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/14.png" alt="" /></div>
-      <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/15.png" alt="" /></div>
+  <!-- FIN - BODY -->
+
+  <!-- INI - Carousel de Clientes -->
+  <div class="carousel-wrapper position-relative">
+    <div class="container inner position-relative">
+      <h2 class="section-title mb-40 text-center">Nuestros clientes</h2>
+      <button class="custom-owl-prev">‹</button>
+      <div class="carousel owl-carousel clients" data-margin="30" data-loop="true" data-dots="false" data-autoplay="true" data-autoplay-timeout="3000" >
+        <!-- items -->
+        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/1.png" alt="" /></div>
+        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/2.png" alt="" /></div>
+        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/3.png" alt="" /></div>
+        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/4.png" alt="" /></div>
+        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/5.png" alt="" /></div>
+        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/6.png" alt="" /></div>
+        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/7.png" alt="" /></div>
+        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/8.png" alt="" /></div>
+        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/9.png" alt="" /></div>
+        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/10.png" alt="" /></div>
+        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/11.png" alt="" /></div>
+        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/12.png" alt="" /></div>
+        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/13.png" alt="" /></div>
+        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/14.png" alt="" /></div>
+        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/15.png" alt="" /></div>
+        <!-- ...más items... -->
+      </div>
+      <button class="custom-owl-next">›</button>
     </div>
-    <button class="custom-owl-next">›</button>
   </div>
-</div>
-<!-- FIN - Carousel de Clientes -->
+  <!-- FIN - Carousel de Clientes -->
 
 {% include footer_4.html light_logo="true" %}
 </div>    

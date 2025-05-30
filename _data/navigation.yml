@@ -5,7 +5,7 @@ main_menu:
     menu_type: "dropdown"
 
   - text: "Nosotros"
-    url: "/"
+    url: "nosotros.html"
     menu_type: "dropdown"
 
   - text: "Servicios"

@@ -1,0 +1,73 @@
+---
+layout: page_nosotros
+page_header:
+  enable: true
+  title: "Nosotros"
+  sub_title: "Aenean lacinia bibendum nulla sed consectetur"
+  background_image: "/assets/images/art/bg1.jpg"
+
+quienes_somos:
+  enable: true
+  title: "¿Quiénes somos?"
+  sub_title: "Somos un equipo de profesionales apasionados por la tecnología y el diseño."
+  image: "/assets/images/concept/concept7@2x.png"
+  lists:
+
+    - title: "Nuestra misión"
+      description: "misión"
+
+    - title: "Nuestra visión"
+      description: "visión"
+
+    - title: "Cómo trabajamos"
+      description: "trabajamos"
+
+    - title: "Prueba"
+      description: "Prueba"
+
+---
+<div class="wrapper gray-wrapper">
+    <div class="container inner">
+      {% if page.quienes_somos.enable %}
+        <div class="wrapper gray-wrapper">
+          <div class="container inner text-center">
+            {% if page.quienes_somos.title %}
+              <h2 class="section-title">{{page.quienes_somos.title}}</h2>
+            {% endif %}
+            {% if page.quienes_somos.sub_title %}
+              <p class="lead larger">{{page.quienes_somos.sub_title}}</p>
+            {% endif %}
+            <div class="space30"></div>
+            <div class="row gutter-60 d-flex align-items-center">
+              <div class="col-md-6 col-lg-3 order-lg-1">
+                {% for list in page.quienes_somos.lists limit: 2 %}
+                  <h4>{{forloop.index}}. {{list.title}}</h4>
+                  <p>{{list.description}}</p>
+                {% endfor %}
+              </div>
+              {% if page.quienes_somos.image %}
+                <div class="col-lg-6 order-sm-first order-lg-2">
+                  <figure>
+                    <img src="{{page.quienes_somos.image}}" alt="{{page.quienes_somos.title}}"/>
+                  </figure>
+                  <div class="space50 d-none d-md-block d-lg-none"></div>
+                </div>
+              {% endif %}
+      <div class="col-md-6 col-lg-3 order-lg-3">
+        {% for list in page.quienes_somos.lists limit: 4  %}
+        {% if forloop.index > 2%}
+        <h4>{{forloop.index}}. {{list.title}}</h4>
+        <p>{{list.description}}</p>
+        {% endif %}
+        {% endfor %}
+      </div>
+      <!--/column -->
+    </div>
+    <!--/.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.wrapper -->
+{% endif %}
+</div>
+</div>
