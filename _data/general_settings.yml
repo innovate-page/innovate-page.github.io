@@ -1,5 +1,5 @@
 # General Settings
-title: "Snowlake premium jekyll template"
+title: "Innovación tecnologica y empresarial"
 email: "mloaiza@innovate.pe"
 email_2: "support@tortoizthemes.com" #Por ver si va
 description: >- # this means to ignore newlines until "baseurl:"
@@ -8,12 +8,12 @@ description: >- # this means to ignore newlines until "baseurl:"
 
 black_logo_1x: "/assets/images/logo.png"
 black_logo_2x: "/assets/images/logo@2x.png"
-light_logo_1x: "/assets/images/logo-light.png"
-light_logo_2x: "/assets/images/logo-light@2x.png"
+light_logo_1x: "/assets/images/logo_innovate_dark.png"
+light_logo_2x: "/assets/images/logo_innovate_dark.png"
 
-address_01: 'Calle Juan de Arona<br />Oficina 131 - Piso 2,<br />San Isidro - Lima, Perú'
+address_01: "Calle Juan de Arona, Oficina 131 - Piso 2, San Isidro - Lima, Perú"
 phone_number: "+51 954 498 176"
-copyright_text: "© 2025 Innovate. Todos los derechos reservados."
+copyright_text: "© 2025 - Todos los derechos reservados."
 
 google_analytics:
   enable: false
@@ -80,12 +80,6 @@ external_links_03:
       text: "Mission"
     - url: "#"
       text: "Process"
-
-footer_newsletter:
-  title: "Contáctanos"
-  sub_title: "Ponte en contactos con nosotros !"
-  subscribe_button_text: "Join"
-
 
 one_page_nav_settings:
   links:
