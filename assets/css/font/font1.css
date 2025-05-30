@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 body,
 .icon-blob span,
 .icon-blob h3,
 .icon-blob p,
 .icon-blob .step {
     font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif !important;
+=======
+body,
+.icon-blob span,
+.icon-blob h3,
+.icon-blob p,
+.icon-blob .step {
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif !important;
+>>>>>>> 415041d7ef78dc12abe7aa3900b34cc3aa5937c3
 }
