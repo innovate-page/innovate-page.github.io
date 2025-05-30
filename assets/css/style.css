@@ -129,7 +129,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     font-family: 'Jost', sans-serif;
     color: #606060;
-    font-size: 0.8rem;
+    font-size: 1rem;
     background: #f9fafb;
     overflow-x: hidden;
     position: relative;
@@ -226,7 +226,7 @@ h6 {
     color: #404040;
     font-weight: 500;
     letter-spacing: normal;
-    margin-bottom: 0.8rem;
+    margin-bottom: 1rem;
 }
 h1,
 .h1 {
@@ -245,7 +245,7 @@ h3,
 }
 h4,
 .h4 {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     line-height: 1.4rem;
 }
 h5,
@@ -267,7 +267,7 @@ h1.text-uppercase,
 }
 h2.text-uppercase,
 .h2.text-uppercase {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     line-height: 1.4rem;
 }
 h3.text-uppercase,
@@ -282,8 +282,8 @@ h4.text-uppercase,
 }
 h5.text-uppercase,
 .h5.text-uppercase {
-    font-size: 0.8rem;
-    line-height: 1.1rem;
+    font-size: 1rem;
+    line-height: 1.3rem;
 }
 h6.text-uppercase,
 .h6.text-uppercase {
@@ -292,7 +292,7 @@ h6.text-uppercase,
 }
 .grid-view h2.post-title {
     margin-bottom: 1rem;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     line-height: 1.4rem;
 }
 .classic-view h2.post-title,
@@ -323,8 +323,8 @@ h6.text-uppercase,
     line-height: 1.5rem;
 }
 .title-color {
-    font-size: 0.8rem;
-    line-height: 1.1rem;
+    font-size: 1rem;
+    line-height: 1.3rem;
     margin-bottom: 1.05rem;
     text-transform: uppercase;
 }
@@ -372,7 +372,7 @@ h6.text-uppercase,
     line-height: 1.5rem;
 }
 .page-title-wrapper .lead {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     line-height: 1.6rem;
 }
 .lead.larger {
@@ -530,7 +530,7 @@ canvas {
 }
 .mega-menu-content .icon-list i {
     font-size: 0.7rem;
-    width: 1.1rem;
+    width: 1.3rem;
 }
 .mega-menu-content a:hover {
     color: var(--color-white);
@@ -569,7 +569,7 @@ canvas {
     transition: all 200ms ease-in-out;
 }
 .navbar-other .nav-item+.nav-item {
-    padding-left: 0.8rem;
+    padding-left: 1rem;
 }
 .navbar-other .nav-item+.nav-item.search-dropdown {
     padding-left: 1rem !important;
@@ -742,7 +742,7 @@ button.hamburger.animate.active:after {
 .offcanvas-close {
     position: absolute;
     top: 0.5rem;
-    left: 0.8rem;
+    left: 1rem;
     cursor: pointer;
     color: var(--color-white);
     font-size: 1.2rem;
@@ -815,7 +815,7 @@ button.hamburger.animate.active:after {
 }
 .navbar-other .nav-item .cart-dropdown-menu .meta.price {
     font-weight: 500;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 .navbar-other .nav-item .cart-dropdown-menu .meta.price,
 .navbar-other .nav-item .cart-dropdown-menu .meta.price span {
@@ -851,7 +851,7 @@ button.hamburger.animate.active:after {
     border: 0;
     margin-bottom: 0.5rem;
     margin-right: 0.25rem;
-    padding: 0.9rem 1.3rem 0.8rem;
+    padding: 0.9rem 1.3rem 1rem;
     font-size: 0.65rem;
     letter-spacing: 0.025rem;
     text-transform: uppercase;
@@ -1702,7 +1702,7 @@ hr.double {
     color: #404040;
 }
 .dropcap.circle {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     color: var(--color-white);
     height: 2.3rem;
     width: 2.3rem;
@@ -1904,7 +1904,7 @@ blockquote.icon p {
     font-style: normal;
 }
 blockquote.larger p {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     line-height: 1.7rem;
     font-weight: 300;
 }
@@ -1979,7 +1979,7 @@ blockquote.icon.icon-left:before {
     width: 3.5rem;
 }
 .blockquote-details span {
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 400;
     text-transform: none;
 }
@@ -1996,7 +1996,7 @@ ol {
 }
 .unordered-list>li:before {
     font-family: sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     vertical-align: middle;
     display: inline-block;
     margin-right: 0.35rem;
@@ -2843,7 +2843,7 @@ footer.inverse-text .meta a:hover {
     font-weight: 500;
     font-size: 0.7rem;
     letter-spacing: normal;
-    padding: 0.8rem;
+    padding: 1rem;
     vertical-align: middle;
     border-radius: 10rem;
 }
@@ -3123,9 +3123,9 @@ ul.dial li:first-child .dial-item-info {
     margin-bottom: 0.6rem;
 }
 .counter p {
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-bottom: 0;
-    line-height: 1.1rem;
+    line-height: 1.3rem;
 }
 .counter .box {
     padding: 1.5rem;
@@ -3155,7 +3155,7 @@ ul.dial li:first-child .dial-item-info {
     font-weight: 400;
 }
 .countdown p {
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
     line-height: 1;
     text-transform: uppercase;
@@ -3224,14 +3224,14 @@ ul.dial li:first-child .dial-item-info {
     -webkit-transition: all 150ms ease-in-out;
     -o-transition: all 150ms ease-in-out;
     transition: all 150ms ease-in-out;
-    padding: 0.8rem 1.2rem;
+    padding: 1rem 1.2rem;
     line-height: 1;
     border-radius: 1.5rem;
     background: none;
 }
 .nav-tabs.nav-pills .nav-link .icon {
     margin-right: 0.5rem;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     vertical-align: -1px;
     -webkit-transition: all 150ms ease-in-out;
     -o-transition: all 150ms ease-in-out;
@@ -3265,7 +3265,7 @@ ul.dial li:first-child .dial-item-info {
 }
 .nav-tabs .nav-item p {
     color: #606060;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: normal;
     margin: 0.25rem 0 0 0;
 }
@@ -3366,7 +3366,7 @@ ul.dial li:first-child .dial-item-info {
     padding-left: 1.5rem;
 }
 .accordion-wrapper.simple .card-header {
-    margin-bottom: 0.8rem;
+    margin-bottom: 1rem;
 }
 /*-----------------------------------------------------------------------------------*/
 /*  42. TABLES
@@ -3475,7 +3475,7 @@ th {
     padding-right: 0.2rem;
 }
 .price-duration {
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 .price-duration:before {
     content: "/";
@@ -3726,7 +3726,7 @@ th {
     background: var(--color-white);
     -webkit-box-shadow: var(--shadow);
             box-shadow: var(--shadow);
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 .item-detailed .hover-icon-second {
     top: 3.5rem;
@@ -3816,7 +3816,7 @@ th {
     display: inline-block;
     position: relative;
     width: 5rem;
-    height: 0.8rem;
+    height: 1rem;
 }
 .custom-control .ratings {
     height: 0.9rem;
@@ -4080,7 +4080,7 @@ th {
     cursor: pointer;
     background: none;
     color: rgba(var(--rgb-white), 1);
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     -webkit-transition: color 150ms ease-in-out !important;
     -o-transition: color 150ms ease-in-out !important;
     transition: color 150ms ease-in-out !important;
@@ -4259,7 +4259,7 @@ a.btn-play-wrapper .btn-play:hover {
     background: var(--color-white);
     -webkit-box-shadow: var(--shadow);
             box-shadow: var(--shadow);
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     border-radius: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4832,7 +4832,7 @@ input[type="color"],
     height: 2.5rem;
     line-height: 2.5rem;
     padding: 0 1rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: #606060;
     background: rgba(var(--rgb-black), 0.05);
     border: 0;
@@ -5169,12 +5169,12 @@ textarea.error {
     right: 0.5rem;
 }
 .lg-toolbar .lg-icon.lg-close {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     padding: 0.85rem 0.6rem 0.5rem 0;
     text-shadow: 0px 1px 1px rgba(var(--rgb-black), 0.1);
 }
 #lg-counter {
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 .lg-sub-html {
     padding: 0.5rem 0.75rem
@@ -5183,7 +5183,7 @@ textarea.error {
     margin-bottom: 0.2rem;
 }
 .lg-sub-html p {
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: var(--color-white);
     margin: 0;
 }
@@ -6489,7 +6489,7 @@ footer.inverse-text address {
     }
     .navbar-other .nav-item a:not(.btn),
     .navbar-other .nav-item button {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
     .dropdown-item,
     .mega-menu-content a {
@@ -6685,7 +6685,7 @@ footer.inverse-text address {
     }
     .dropdown-item,
     .mega-menu-content a {
-        font-size: 0.8rem;
+        font-size: 1rem;
         font-weight: 400;
     }
     .navbar .dropdown-menu:not(.search-dropdown-menu) {
@@ -6935,7 +6935,7 @@ footer.inverse-text address {
         margin-bottom: 1rem;
     }
     .dial-item-info:not(.noResponsive) {
-        padding: 0.8rem 0.5rem;
+        padding: 1rem 0.5rem;
         display: block !important;
         position: static;
         -webkit-transform: none;
@@ -7140,7 +7140,7 @@ footer.inverse-text address {
 }
 
 .hero-content h1 {
-  font-size: 30px;
+  font-size: 45px;
   color: #ffffff;
   font-weight: bold;
   line-height: 1.3;
@@ -7168,9 +7168,9 @@ footer.inverse-text address {
 }
 
 .hero-button {
-  background-color: #007bff;
+  background-color: crimson;
   color: #fff;
-  padding: 8px 8px;
+  padding: 10px 15px;
   border-radius: 15px;
   text-decoration: none;
   font-weight: bold;
@@ -7180,7 +7180,7 @@ footer.inverse-text address {
 }
 
 .hero-button:hover {
-  background-color: #0056b3;
+  background-color: white;
 }
 
 .hero-image {
@@ -7251,7 +7251,7 @@ footer.inverse-text address {
   align-items: center;
   justify-content: center;
 }
-
+/*
 .custom-owl-prev,
 .custom-owl-next {
   position: absolute;
@@ -7268,11 +7268,11 @@ footer.inverse-text address {
 }
 
 .custom-owl-prev {
-  left: 10px;
+  left: 5px;
 }
 
 .custom-owl-next {
-  right: 10px;
+  right: 5px;
 }
 
 @media (max-width: 576px) {
@@ -7283,7 +7283,7 @@ footer.inverse-text address {
   .custom-owl-next {
     right: 0;
   }
-}
+}*/
 
 .post-slider .owl-carousel .owl-item img {
   width: auto !important;
@@ -7291,4 +7291,73 @@ footer.inverse-text address {
   height: auto;
   display: block;
   margin: 0 auto;
+}
+
+.grayscale-image,
+.grayscale-image img {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.grayscale-image:hover,
+.grayscale-image:hover img {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+}
+
+.footer-image,
+.footer-image img {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;  /* centra horizontalmente */
+  align-items: center;      /* centra verticalmente */
+}
+
+.img-responsive-svg {
+  width: 100%;
+  max-width: 100px; /* Ajusta este valor según el tamaño máximo deseado */
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container.inner {
+  position: relative;
+}
+
+.custom-owl-prev,
+.custom-owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  padding: 0.4rem 0.6rem;
+  z-index: 2;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  line-height: 1;
+   align-items: center;
+  justify-content: center;
+}
+
+.custom-owl-prev {
+  left: 0;
+}
+
+.custom-owl-next {
+  right: 0;
+}
+
+.custom-owl-prev:hover,
+.custom-owl-next:hover {
+  opacity: 1;
 }
