@@ -1,9 +1,10 @@
----
+
 layout: default
 title: Innovate
 custom_css: purple
 custom_font:
 
+slider_area:
 slider_area:
   enable: true
   title: "Impulsamos tu crecimiento con tecnología inteligente"
@@ -113,8 +114,20 @@ two_coumns_two:
       </div>
       <div class="divider"><svg xmlns="http://www.w3.org/2000/svg" class="fill-light-wrapper" preserveAspectRatio="none" viewBox="0 0 1070 52">
         <path d="M0,52V0S247,91,505,32c261.17-59.72,565-13,565-13V52Z" /></svg>
+      <div class="divider"><svg xmlns="http://www.w3.org/2000/svg" class="fill-light-wrapper" preserveAspectRatio="none" viewBox="0 0 1070 52">
+        <path d="M0,52V0S247,91,505,32c261.17-59.72,565-13,565-13V52Z" /></svg>
       </div>
     </div>
+
+    <!-- INI - if page.slider_area.image -->
+    {% if page.slider_area.image %}
+      <div class="wrapper overflow-top bleed-l  d-none d-lg-block">
+        <div class="container text-right">
+          <div class="row" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-lg-5 offset-lg-7 col-xl-4 offset-xl-7">
+              <figure>
+                <img src="{{page.slider_area.image}}" alt="{{page.slider_area.title}}" class="{{page.slider_area.image_class}}"/>
+              </figure>
 
     <!-- INI - if page.slider_area.image -->
     {% if page.slider_area.image %}
@@ -128,6 +141,7 @@ two_coumns_two:
             </div>
           </div>
         </div>
+      </div>
       </div>
     {% endif %}
     <!-- FIN - if page.slider_area.image -->
@@ -158,9 +172,47 @@ two_coumns_two:
                 <h5 style="font-weight: bold;">{{features.title}}</h5>
                 <p>{{features.description}}</p>
               </div>
+    <!-- FIN - if page.slider_area.image -->
+  {% endif %}
+  <!-- FIN - if page.slider_area.enable -->
+  
+  <!-- INI - BODY -->
+  <div class="wrapper light-wrapper">
+    <div class="container inner">
+      <!-- INI - if page.features_area.enable -->
+  	  {% if page.features_area.enable %}
+        <div class="features-area">
+          <div class="row">
+        	  <div class="col-md-7 mx-auto">
+		          <h2 class="title-color color-gray text-center">{{page.features_area.title}}</h2>
+				      <h3 class="display-3 text-center">{{page.features_area.sub_title}}</h3>
+				      <div class="space40"></div>
+        	  </div>
+          </div>	
+		      <div class="row gutter-60 text-center">
+            <!-- INI - for features in page.features_area.features -->
+            {% for features in page.features_area.features %}
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-image mb-30">
+                  <img src="{{features.image}}" alt="{{features.title}}" class="img-fluid" style="max-height: 120px;">
+                  <!--span class="step">{{forloop.index}}</span-->
+                </div>
+                <h5 style="font-weight: bold;">{{features.title}}</h5>
+                <p>{{features.description}}</p>
+              </div>
             {% endfor %}
             <!-- FIN - for features in page.features_area.features -->
+            <!-- FIN - for features in page.features_area.features -->
           </div>
+        </div>
+      {% endif %}
+      <!-- FIN - if page.features_area.enable -->
+      
+      <div class="space100"></div>
+      <!-- INI - Imagen Capacidades -->
+      <div class="row justify-content-center align-items-center">
+        <div class="col-auto">
+          <img src="{{relative_url}}/assets/images/art/capacidades.svg" alt="" class="img-responsive-svg"/>
         </div>
       {% endif %}
       <!-- FIN - if page.features_area.enable -->
@@ -183,8 +235,26 @@ two_coumns_two:
                 <h2 class="title-color color-gray text-center">{{page.two_coumns_one.title}}</h2>
                 <h3 class="display-3 mb-0 text-center">{{page.two_coumns_one.sub_title}}</h3>
               <div class="space50"></div>
+      <!-- FIN - Imagen Capacidades -->
+      
+      <!-- INI - if page.two_coumns_one.enable-->
+      {% if page.two_coumns_one.enable %}
+        <div class="two-column-one">
+          <div class="row">
+            <div class="col-md-7 mx-auto">
+              <div class="space100"></div>
+                <h2 class="title-color color-gray text-center">{{page.two_coumns_one.title}}</h2>
+                <h3 class="display-3 mb-0 text-center">{{page.two_coumns_one.sub_title}}</h3>
+              <div class="space50"></div>
             </div>
           </div>
+          <div class="row align-items-center">
+            <!-- INI - if page.two_coumns_one.image -->
+            {% if page.two_coumns_one.image %}
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                <figure>
+                  <img src="{{page.two_coumns_one.image}}" alt="{{page.two_coumns_one.title}}" class="{{page.slider_area.image_class}}"/>
+                </figure>
           <div class="row align-items-center">
             <!-- INI - if page.two_coumns_one.image -->
             {% if page.two_coumns_one.image %}
@@ -202,7 +272,17 @@ two_coumns_two:
                 <div data-aos="fade-up" data-aos-delay="800">
                   <h4>{{list.title}}</h4>
                   <p>{{list.description}}</p>
+            <!-- FIN - if page.two_coumns_one.image -->
+            <div class="space40 d-lg-none"></div>
+            <div class="col-lg-6 pl-60 pl-md-15">
+              <!-- INI - for list in page.two_coumns_one.lists -->
+              {% for list in page.two_coumns_one.lists %}
+                <div data-aos="fade-up" data-aos-delay="800">
+                  <h4>{{list.title}}</h4>
+                  <p>{{list.description}}</p>
                 </div>
+              {% endfor %}
+              <!-- FIN - for list in page.two_coumns_one.lists -->
               {% endfor %}
               <!-- FIN - for list in page.two_coumns_one.lists -->
             </div>
@@ -270,7 +350,74 @@ two_coumns_two:
         <!-- ...más items... -->
       </div>
       <button class="custom-owl-next">›</button>
+      {% endif %}
+      <!-- FIN - if page.two_coumns_one.enable-->
+
+      <!-- INI - if page.two_coumns_two.enable -->
+      {% if page.two_coumns_two.enable %}
+        <div class="two-column-two">
+	        <div class="space150"></div>
+	        <div class="row align-items-center">
+            <!-- INI - if page.two_coumns_two.image -->
+	          {% if page.two_coumns_two.image %}
+	            <div class="col-lg-6 order-lg-2" data-aos="fade-up" data-aos-delay="300">
+	              <figure>
+                  <img src="{{page.two_coumns_two.image}}" alt="{{page.two_coumns_two.title}}" class="{{page.slider_area.image_class}}"/>
+                </figure>
+	            </div>
+	          {% endif %}
+            <!-- FIN - if page.two_coumns_two.image -->
+	          <div class="space40 d-lg-none"></div>
+	          <div class="col-lg-6 pr-60 pr-md-15">
+              <!-- INI - for list in page.two_coumns_two.lists -->
+	  	        {% for list in page.two_coumns_two.lists %}
+	              <div data-aos="fade-up" data-aos-delay="800">
+	                <h4>{{list.title}}</h4>
+	                <p>{{list.description}}</p>
+	              </div>
+	              <div class="space30"></div>
+              {% endfor %}
+              <!-- FIN - for list in page.two_coumns_two.lists -->
+	          </div>
+	        </div>
+        </div>
+      {% endif %}
+      <!-- FIN - if page.two_coumns_two.enable -->
     </div>
+  </div>
+  <!-- FIN - BODY -->
+
+  <!-- INI - Carousel de Clientes -->
+  <div class="carousel-wrapper position-relative">
+    <div class="container inner position-relative">
+      <h2 class="section-title mb-40 text-center">Nuestros clientes</h2>
+      <button class="custom-owl-prev">‹</button>
+      <div class="carousel owl-carousel clients" data-margin="30" data-loop="true" data-dots="false" data-autoplay="true" data-autoplay-timeout="3000" >
+        <!-- items -->
+        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/1.png" alt="" /></div>
+        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/2.png" alt="" /></div>
+        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/3.png" alt="" /></div>
+        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/4.png" alt="" /></div>
+        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/5.png" alt="" /></div>
+        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/6.png" alt="" /></div>
+        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/7.png" alt="" /></div>
+        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/8.png" alt="" /></div>
+        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/9.png" alt="" /></div>
+        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/10.png" alt="" /></div>
+        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/11.png" alt="" /></div>
+        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/12.png" alt="" /></div>
+        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/13.png" alt="" /></div>
+        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/14.png" alt="" /></div>
+        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/15.png" alt="" /></div>
+        <!-- ...más items... -->
+      </div>
+      <button class="custom-owl-next">›</button>
+    </div>
+  </div>
+  <!-- FIN - Carousel de Clientes -->
+
+{% include footer_4.html light_logo="true" %}
+</div>    
   </div>
   <!-- FIN - Carousel de Clientes -->
 

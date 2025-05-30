@@ -130,6 +130,7 @@ body {
     font-family: 'Jost', sans-serif;
     color: #606060;
     font-size: 1rem;
+    font-size: 1rem;
     background: #f9fafb;
     overflow-x: hidden;
     position: relative;
@@ -227,6 +228,7 @@ h6 {
     font-weight: 500;
     letter-spacing: normal;
     margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 h1,
 .h1 {
@@ -245,6 +247,7 @@ h3,
 }
 h4,
 .h4 {
+    font-size: 1.3rem;
     font-size: 1.3rem;
     line-height: 1.4rem;
 }
@@ -268,6 +271,7 @@ h1.text-uppercase,
 h2.text-uppercase,
 .h2.text-uppercase {
     font-size: 1.3rem;
+    font-size: 1.3rem;
     line-height: 1.4rem;
 }
 h3.text-uppercase,
@@ -284,6 +288,8 @@ h5.text-uppercase,
 .h5.text-uppercase {
     font-size: 1rem;
     line-height: 1.3rem;
+    font-size: 1rem;
+    line-height: 1.3rem;
 }
 h6.text-uppercase,
 .h6.text-uppercase {
@@ -292,6 +298,7 @@ h6.text-uppercase,
 }
 .grid-view h2.post-title {
     margin-bottom: 1rem;
+    font-size: 1.3rem;
     font-size: 1.3rem;
     line-height: 1.4rem;
 }
@@ -323,6 +330,8 @@ h6.text-uppercase,
     line-height: 1.5rem;
 }
 .title-color {
+    font-size: 1rem;
+    line-height: 1.3rem;
     font-size: 1rem;
     line-height: 1.3rem;
     margin-bottom: 1.05rem;
@@ -372,6 +381,7 @@ h6.text-uppercase,
     line-height: 1.5rem;
 }
 .page-title-wrapper .lead {
+    font-size: 1.3rem;
     font-size: 1.3rem;
     line-height: 1.6rem;
 }
@@ -531,6 +541,7 @@ canvas {
 .mega-menu-content .icon-list i {
     font-size: 0.7rem;
     width: 1.3rem;
+    width: 1.3rem;
 }
 .mega-menu-content a:hover {
     color: var(--color-white);
@@ -569,6 +580,7 @@ canvas {
     transition: all 200ms ease-in-out;
 }
 .navbar-other .nav-item+.nav-item {
+    padding-left: 1rem;
     padding-left: 1rem;
 }
 .navbar-other .nav-item+.nav-item.search-dropdown {
@@ -743,6 +755,7 @@ button.hamburger.animate.active:after {
     position: absolute;
     top: 0.5rem;
     left: 1rem;
+    left: 1rem;
     cursor: pointer;
     color: var(--color-white);
     font-size: 1.2rem;
@@ -816,6 +829,7 @@ button.hamburger.animate.active:after {
 .navbar-other .nav-item .cart-dropdown-menu .meta.price {
     font-weight: 500;
     font-size: 1rem;
+    font-size: 1rem;
 }
 .navbar-other .nav-item .cart-dropdown-menu .meta.price,
 .navbar-other .nav-item .cart-dropdown-menu .meta.price span {
@@ -851,6 +865,7 @@ button.hamburger.animate.active:after {
     border: 0;
     margin-bottom: 0.5rem;
     margin-right: 0.25rem;
+    padding: 0.9rem 1.3rem 1rem;
     padding: 0.9rem 1.3rem 1rem;
     font-size: 0.65rem;
     letter-spacing: 0.025rem;
@@ -1703,6 +1718,7 @@ hr.double {
 }
 .dropcap.circle {
     font-size: 1.3rem;
+    font-size: 1.3rem;
     color: var(--color-white);
     height: 2.3rem;
     width: 2.3rem;
@@ -1905,6 +1921,7 @@ blockquote.icon p {
 }
 blockquote.larger p {
     font-size: 1.3rem;
+    font-size: 1.3rem;
     line-height: 1.7rem;
     font-weight: 300;
 }
@@ -1996,6 +2013,7 @@ ol {
 }
 .unordered-list>li:before {
     font-family: sans-serif;
+    font-size: 1.3rem;
     font-size: 1.3rem;
     vertical-align: middle;
     display: inline-block;
@@ -2844,6 +2862,7 @@ footer.inverse-text .meta a:hover {
     font-size: 0.7rem;
     letter-spacing: normal;
     padding: 1rem;
+    padding: 1rem;
     vertical-align: middle;
     border-radius: 10rem;
 }
@@ -3124,7 +3143,9 @@ ul.dial li:first-child .dial-item-info {
 }
 .counter p {
     font-size: 1rem;
+    font-size: 1rem;
     margin-bottom: 0;
+    line-height: 1.3rem;
     line-height: 1.3rem;
 }
 .counter .box {
@@ -3155,6 +3176,7 @@ ul.dial li:first-child .dial-item-info {
     font-weight: 400;
 }
 .countdown p {
+    font-size: 1rem;
     font-size: 1rem;
     margin-bottom: 1rem;
     line-height: 1;
@@ -3225,12 +3247,14 @@ ul.dial li:first-child .dial-item-info {
     -o-transition: all 150ms ease-in-out;
     transition: all 150ms ease-in-out;
     padding: 1rem 1.2rem;
+    padding: 1rem 1.2rem;
     line-height: 1;
     border-radius: 1.5rem;
     background: none;
 }
 .nav-tabs.nav-pills .nav-link .icon {
     margin-right: 0.5rem;
+    font-size: 1.3rem;
     font-size: 1.3rem;
     vertical-align: -1px;
     -webkit-transition: all 150ms ease-in-out;
@@ -3265,6 +3289,7 @@ ul.dial li:first-child .dial-item-info {
 }
 .nav-tabs .nav-item p {
     color: #606060;
+    font-size: 1rem;
     font-size: 1rem;
     font-weight: normal;
     margin: 0.25rem 0 0 0;
@@ -3366,6 +3391,7 @@ ul.dial li:first-child .dial-item-info {
     padding-left: 1.5rem;
 }
 .accordion-wrapper.simple .card-header {
+    margin-bottom: 1rem;
     margin-bottom: 1rem;
 }
 /*-----------------------------------------------------------------------------------*/
@@ -3475,6 +3501,7 @@ th {
     padding-right: 0.2rem;
 }
 .price-duration {
+    font-size: 1rem;
     font-size: 1rem;
 }
 .price-duration:before {
@@ -3727,6 +3754,7 @@ th {
     -webkit-box-shadow: var(--shadow);
             box-shadow: var(--shadow);
     font-size: 1.3rem;
+    font-size: 1.3rem;
 }
 .item-detailed .hover-icon-second {
     top: 3.5rem;
@@ -3816,6 +3844,7 @@ th {
     display: inline-block;
     position: relative;
     width: 5rem;
+    height: 1rem;
     height: 1rem;
 }
 .custom-control .ratings {
@@ -4081,6 +4110,7 @@ th {
     background: none;
     color: rgba(var(--rgb-white), 1);
     font-size: 1.3rem;
+    font-size: 1.3rem;
     -webkit-transition: color 150ms ease-in-out !important;
     -o-transition: color 150ms ease-in-out !important;
     transition: color 150ms ease-in-out !important;
@@ -4259,6 +4289,7 @@ a.btn-play-wrapper .btn-play:hover {
     background: var(--color-white);
     -webkit-box-shadow: var(--shadow);
             box-shadow: var(--shadow);
+    font-size: 1.3rem;
     font-size: 1.3rem;
     border-radius: 100%;
     display: -webkit-box;
@@ -4833,6 +4864,7 @@ input[type="color"],
     line-height: 2.5rem;
     padding: 0 1rem;
     font-size: 1rem;
+    font-size: 1rem;
     color: #606060;
     background: rgba(var(--rgb-black), 0.05);
     border: 0;
@@ -5170,10 +5202,12 @@ textarea.error {
 }
 .lg-toolbar .lg-icon.lg-close {
     font-size: 1.3rem;
+    font-size: 1.3rem;
     padding: 0.85rem 0.6rem 0.5rem 0;
     text-shadow: 0px 1px 1px rgba(var(--rgb-black), 0.1);
 }
 #lg-counter {
+    font-size: 1rem;
     font-size: 1rem;
 }
 .lg-sub-html {
@@ -5183,6 +5217,7 @@ textarea.error {
     margin-bottom: 0.2rem;
 }
 .lg-sub-html p {
+    font-size: 1rem;
     font-size: 1rem;
     color: var(--color-white);
     margin: 0;
@@ -6490,6 +6525,7 @@ footer.inverse-text address {
     .navbar-other .nav-item a:not(.btn),
     .navbar-other .nav-item button {
         font-size: 1.3rem;
+        font-size: 1.3rem;
     }
     .dropdown-item,
     .mega-menu-content a {
@@ -6685,6 +6721,7 @@ footer.inverse-text address {
     }
     .dropdown-item,
     .mega-menu-content a {
+        font-size: 1rem;
         font-size: 1rem;
         font-weight: 400;
     }
@@ -6936,6 +6973,7 @@ footer.inverse-text address {
     }
     .dial-item-info:not(.noResponsive) {
         padding: 1rem 0.5rem;
+        padding: 1rem 0.5rem;
         display: block !important;
         position: static;
         -webkit-transform: none;
@@ -7141,6 +7179,7 @@ footer.inverse-text address {
 
 .hero-content h1 {
   font-size: 45px;
+  font-size: 45px;
   color: #ffffff;
   font-weight: bold;
   line-height: 1.3;
@@ -7169,7 +7208,9 @@ footer.inverse-text address {
 
 .hero-button {
   background-color: crimson;
+  background-color: crimson;
   color: #fff;
+  padding: 10px 15px;
   padding: 10px 15px;
   border-radius: 15px;
   text-decoration: none;
@@ -7180,6 +7221,7 @@ footer.inverse-text address {
 }
 
 .hero-button:hover {
+  background-color: white;
   background-color: white;
 }
 
@@ -7252,6 +7294,7 @@ footer.inverse-text address {
   justify-content: center;
 }
 /*
+/*
 .custom-owl-prev,
 .custom-owl-next {
   position: absolute;
@@ -7269,9 +7312,11 @@ footer.inverse-text address {
 
 .custom-owl-prev {
   left: 5px;
+  left: 5px;
 }
 
 .custom-owl-next {
+  right: 5px;
   right: 5px;
 }
 
@@ -7284,6 +7329,7 @@ footer.inverse-text address {
     right: 0;
   }
 }*/
+}*/
 
 .post-slider .owl-carousel .owl-item img {
   width: auto !important;
@@ -7293,6 +7339,74 @@ footer.inverse-text address {
   margin: 0 auto;
 }
 
+.grayscale-image,
+.grayscale-image img {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.grayscale-image:hover,
+.grayscale-image:hover img {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+}
+
+.footer-image,
+.footer-image img {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;  /* centra horizontalmente */
+  align-items: center;      /* centra verticalmente */
+}
+
+.img-responsive-svg {
+  width: 100%;
+  max-width: 100px; /* Ajusta este valor según el tamaño máximo deseado */
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container.inner {
+  position: relative;
+}
+
+.custom-owl-prev,
+.custom-owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  padding: 0.4rem 0.6rem;
+  z-index: 2;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  line-height: 1;
+   align-items: center;
+  justify-content: center;
+}
+
+.custom-owl-prev {
+  left: 0;
+}
+
+.custom-owl-next {
+  right: 0;
+}
+
+.custom-owl-prev:hover,
+.custom-owl-next:hover {
+  opacity: 1;
+}
 .grayscale-image,
 .grayscale-image img {
   filter: grayscale(100%);
