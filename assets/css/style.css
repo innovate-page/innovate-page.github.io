@@ -7361,3 +7361,13 @@ footer.inverse-text address {
 .custom-owl-next:hover {
   opacity: 1;
 }
+
+.icon-big {
+  font-size: 80px; /* Cambia el valor según el tamaño deseado */
+}
+
+.img-responsiva {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

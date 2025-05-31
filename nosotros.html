@@ -2,72 +2,87 @@
 layout: page_nosotros
 page_header:
   enable: true
-  title: "Nosotros"
-  sub_title: "Aenean lacinia bibendum nulla sed consectetur"
-  background_image: "/assets/images/art/bg1.jpg"
+  title: "¿Quiénes somos?"
+  background_image: "/assets/images/art/nosotros.png"
+  image_class: "grayscale-image"
 
 quienes_somos:
   enable: true
-  title: "¿Quiénes somos?"
-  sub_title: "Somos un equipo de profesionales apasionados por la tecnología y el diseño."
-  image: "/assets/images/concept/concept7@2x.png"
-  lists:
-
-    - title: "Nuestra misión"
-      description: "misión"
-
-    - title: "Nuestra visión"
-      description: "visión"
-
-    - title: "Cómo trabajamos"
-      description: "trabajamos"
-
-    - title: "Prueba"
-      description: "Prueba"
-
+  title: "Somos Innovate"
+  sub_title: "Una empresa con más de 3 años construyendo soluciones tecnológicas que generan un impacto positivo y transformador en organizaciones de Perú y Latinoamérica. Nuestra pasión es ayudar a las empresas a evolucionar, crecer y liderar en la era digital, utilizando el poder de la inteligencia artificial como motor de cambio. Nos especializamos en comprender profundamente las necesidades de los usuarios y en entregar valor de forma ágil y efectiva. Aplicamos metodologías UX, Lean, prácticas ágiles y DevOps para crear soluciones de software de alta disponibilidad, diseñadas para escalar y adaptarse a los desafíos del presente y del futuro."
+  image: "/assets/images/art/quienes_somos.gif"
 ---
-<div class="wrapper gray-wrapper">
-    <div class="container inner">
-      {% if page.quienes_somos.enable %}
-        <div class="wrapper gray-wrapper">
-          <div class="container inner text-center">
-            {% if page.quienes_somos.title %}
-              <h2 class="section-title">{{page.quienes_somos.title}}</h2>
-            {% endif %}
-            {% if page.quienes_somos.sub_title %}
-              <p class="lead larger">{{page.quienes_somos.sub_title}}</p>
-            {% endif %}
-            <div class="space30"></div>
-            <div class="row gutter-60 d-flex align-items-center">
-              <div class="col-md-6 col-lg-3 order-lg-1">
-                {% for list in page.quienes_somos.lists limit: 2 %}
-                  <h4>{{forloop.index}}. {{list.title}}</h4>
-                  <p>{{list.description}}</p>
-                {% endfor %}
-              </div>
-              {% if page.quienes_somos.image %}
-                <div class="col-lg-6 order-sm-first order-lg-2">
-                  <figure>
-                    <img src="{{page.quienes_somos.image}}" alt="{{page.quienes_somos.title}}"/>
-                  </figure>
-                  <div class="space50 d-none d-md-block d-lg-none"></div>
-                </div>
-              {% endif %}
-      <div class="col-md-6 col-lg-3 order-lg-3">
-        {% for list in page.quienes_somos.lists limit: 4  %}
-        {% if forloop.index > 2%}
-        <h4>{{forloop.index}}. {{list.title}}</h4>
-        <p>{{list.description}}</p>
-        {% endif %}
-        {% endfor %}
+<!-- INI - if page.page_header.enable -->
+{% if page.page_header.enable %}
+  <div class="wrapper image-wrapper bg-image page-title-wrapper inverse-text" data-image-src="{{page.page_header.background_image}}">
+    <div class="container inner pb-100">
+      <div class="space100"></div>
+      <div class="row">
+        <div class="col-lg-7 col-xl-6">
+          <!-- INI - if page.page_header.title -->
+          {% if page.page_header.title %}
+            <h1 class="display-1" data-aos="fade-up" data-aos-delay="800">{{page.page_header.title}}</h1>
+            <div class="space10"></div>
+          {% endif %}
+          <!-- FIN - if page.page_header.title -->
+        </div>
       </div>
-      <!--/column -->
     </div>
-    <!--/.row -->
+    <div class="divider"><svg xmlns="http://www.w3.org/2000/svg" class="fill-light-wrapper" preserveAspectRatio="none" viewBox="0 0 1070 52">
+      <path d="M0,52V0S247,91,505,32c261.17-59.72,565-13,565-13V52Z" /></svg>
+    </div>
   </div>
-  <!-- /.container -->
-</div>
-<!-- /.wrapper -->
 {% endif %}
-</div>
+<!-- FIN - if page.page_header.enable -->
+
+<div class="wrapper">
+  <div class="container inner">
+    <!-- INI - if page.quienes_somos.enable -->
+    {% if page.quienes_somos.enable %}
+      <div class="wrapper">
+        <div class="container inner text-center">
+          <!-- INI - if page.quienes_somos.title -->
+          {% if page.quienes_somos.title %}
+            <h2 class="section-title" style="font-weight: bold;">{{page.quienes_somos.title}}</h2>
+          {% endif %}
+          <!-- FIN - if page.quienes_somos.title -->
+          
+          <!-- INI - if page.quienes_somos.sub_title -->
+          {% if page.quienes_somos.sub_title %}
+            <p class="lead larger">{{page.quienes_somos.sub_title}}</p>
+          {% endif %}
+          <!-- FIN - if page.quienes_somos.sub_title -->
+        </div>
+      </div>
+    {% endif %}
+    <!-- FIN - if page.quienes_somos.enable -->
+
+    <div class="wrapper">
+      <div class="container inner">
+        <div class="row gutter-50 gutter-md-30 process-wrapper line text-center">
+          <div class="col-md-4"> 
+            <i class="icofont-dashboard-web icon-big"></i>
+            <h5 style="font-weight: bold;">Misión</h5>
+            <p>Potenciar a las empresas con soluciones tecnológicas innovadoras y eficientes, siendo tu aliado estratégico para alcanzar tus metas.</p>
+          </div>
+          <div class="col-md-4"> 
+            <i class="icofont-crown icon-big"></i>
+            <h5 style="font-weight: bold;">Visión</h5>
+            <p>Ser reconocidos como líderes en consultoría tecnológica en América Latina, destacando por nuestra capacidad de resolver desafíos complejos mediante el uso estratégico y ético de la inteligencia artificial.</p>
+          </div>
+          <div class="col-md-4"> 
+            <i class="icofont-bullseye icon-big"></i>
+            <h5 style="font-weight: bold;">Impacto</h5>
+            <p>Impulsamos la innovación con un enfoque centrado en el usuario, excelencia técnica y agilidad. Nos guía el compromiso de generar un impacto positivo y sostenible en cada solución que desarrollamos</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- INI - Enfoque gif -->
+    <div class="wrapper align-items-center" >
+        <img class="img-responsiva" src="{{relative_url}}/assets/images/art/enfoque.gif"/>
+    </div>
+    <!-- FIN - Enfoque gif -->
+  </div>
 </div>
