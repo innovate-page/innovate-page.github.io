@@ -7428,3 +7428,12 @@ footer.inverse-text address {
   padding-left: 20px;
   color: #444;
 }
+
+.servicio-content .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicio-content .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
