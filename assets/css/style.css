@@ -7397,13 +7397,13 @@ footer.inverse-text address {
 
 .servicio-tabs .nav-link:hover {
   background-color: #f8f9fa;
-  border-left-color: #00c48d;
+  border-left-color: #848abd;
 }
 
 .servicio-tabs .nav-link.active {
-  background-color: #e6f7f1;
-  border-left-color: #00c48d;
-  color: #00c48d;
+  background-color: #e8e9f5; /* puedes ajustar si quieres un morado más suave */
+  border-left-color: #848abd;
+  color: #848abd;
 }
 
 /* Contenido de servicios */
