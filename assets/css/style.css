@@ -7388,8 +7388,8 @@ footer.inverse-text address {
 .servicio-tabs .nav-link {
   font-weight: 500;
   color: #333;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 35px;
+  padding-bottom: 35px;
   border-radius: 0;
   border-left: 3px solid transparent;
   transition: background 0.3s, border-left-color 0.3s;
@@ -7408,7 +7408,16 @@ footer.inverse-text address {
 
 /* Contenido de servicios */
 .servicio-content {
+  max-height: 585px; /* o el alto que quieras igualar */
+  overflow-y: auto;
   padding-left: 30px;
+}
+
+.servicio-content::-webkit-scrollbar {
+  width: 0px;
+}
+.servicio-content::-webkit-scrollbar-thumb {
+  background-color: transparent;
 }
 
 .servicio-content h3 {
@@ -7436,4 +7445,68 @@ footer.inverse-text address {
 .servicio-content .card:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.flujo-proceso {
+  position: relative;
+  margin-left: 30px;
+  border-left: 2px solid #ccc;
+  padding-left: 30px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.step-icon {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border: 2px solid #848abd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #848abd;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  position: absolute;
+  left: -55px;
+  top: 0;
+}
+
+.step-content {
+  margin-left: 30px;
+}
+
+.step-desc {
+  margin: 0 0 10px;
+  color: #444;
+}
+
+.step-label {
+  display: inline-block;
+  background: #848abd;
+  color: #fff;
+  font-weight: bold;
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-size: 14px;
 }

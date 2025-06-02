@@ -27,6 +27,19 @@ servicios:
           descripcion: "Soluciones adaptadas a dispositivos móviles para mayor accesibilidad."
         - titulo: "Portals"
           descripcion: "Portales web autogestionables, rápidos y modernos."
+      flujo:
+        - icono: "jam-search"
+          titulo: "Evaluación Inicial"
+          descripcion: "Realizamos un análisis profundo..."
+        - icono: "jam-layout"
+          titulo: "Propuesta Detallada"
+          descripcion: "Desarrollamos un plan de acción..."
+        - icono: "jam-play"
+          titulo: "Implementación"
+          descripcion: "Ejecutamos las soluciones..."
+        - icono: "jam-check"
+          titulo: "Seguimiento y Optimización"
+          descripcion: "Medimos resultados, proporcionamos informes..."
 
     - id: cloud-journey
       nombre: "Cloud journey"
@@ -40,6 +53,19 @@ servicios:
           descripcion: "Implementación de soluciones inteligentes en la nube."
         - titulo: "Data Visualization"
           descripcion: "Dashboards personalizados para análisis de datos en tiempo real."
+      flujo:
+        - icono: "jam-search"
+          titulo: "Evaluación Inicial"
+          descripcion: "Realizamos un análisis profundo..."
+        - icono: "jam-layout"
+          titulo: "Propuesta Detallada"
+          descripcion: "Desarrollamos un plan de acción..."
+        - icono: "jam-play"
+          titulo: "Implementación"
+          descripcion: "Ejecutamos las soluciones..."
+        - icono: "jam-check"
+          titulo: "Seguimiento y Optimización"
+          descripcion: "Medimos resultados, proporcionamos informes..."
 
     - id: cx
       nombre: "CX"
@@ -53,6 +79,19 @@ servicios:
           descripcion: "Interfaces modulares que mejoran la experiencia del usuario."
         - titulo: "DevSecOps"
           descripcion: "Interfaces modulares que mejoran la experiencia del usuario."
+      flujo:
+        - icono: "jam-search"
+          titulo: "Evaluación Inicial"
+          descripcion: "Realizamos un análisis profundo..."
+        - icono: "jam-layout"
+          titulo: "Propuesta Detallada"
+          descripcion: "Desarrollamos un plan de acción..."
+        - icono: "jam-play"
+          titulo: "Implementación"
+          descripcion: "Ejecutamos las soluciones..."
+        - icono: "jam-check"
+          titulo: "Seguimiento y Optimización"
+          descripcion: "Medimos resultados, proporcionamos informes..."
 
     - id: data-analytics
       nombre: "Data Analytics"
@@ -66,6 +105,19 @@ servicios:
           descripcion: "Automatización inteligente de tareas repetitivas con robots de software."
         - titulo: "IDP / ECM"
           descripcion: "Captura, clasificación y gestión inteligente de documentos empresariales."
+      flujo:
+        - icono: "jam-search"
+          titulo: "Evaluación Inicial"
+          descripcion: "Realizamos un análisis profundo..."
+        - icono: "jam-layout"
+          titulo: "Propuesta Detallada"
+          descripcion: "Desarrollamos un plan de acción..."
+        - icono: "jam-play"
+          titulo: "Implementación"
+          descripcion: "Ejecutamos las soluciones..."
+        - icono: "jam-check"
+          titulo: "Seguimiento y Optimización"
+          descripcion: "Medimos resultados, proporcionamos informes..."
 
     - id: machine-learning
       nombre: "Machine Learnign / AI"
@@ -79,6 +131,19 @@ servicios:
           descripcion: "Optimización de decisiones con algoritmos."
         - titulo: "Entrenamiento continuo"
           descripcion: "Mejora progresiva mediante aprendizaje automatizado."
+      flujo:
+        - icono: "jam-search"
+          titulo: "Evaluación Inicial"
+          descripcion: "Realizamos un análisis profundo..."
+        - icono: "jam-layout"
+          titulo: "Propuesta Detallada"
+          descripcion: "Desarrollamos un plan de acción..."
+        - icono: "jam-play"
+          titulo: "Implementación"
+          descripcion: "Ejecutamos las soluciones..."
+        - icono: "jam-check"
+          titulo: "Seguimiento y Optimización"
+          descripcion: "Medimos resultados, proporcionamos informes..."
 
     - id: agile-teams
       nombre: "Agile Teams"
@@ -92,6 +157,19 @@ servicios:
           descripcion: "Comunidades de práctica que impulsan la mejora continua."
         - titulo: "Transformación cultural"
           descripcion: "Adopción de una mentalidad ágil en toda la organización."
+      flujo:
+        - icono: "jam-search"
+          titulo: "Evaluación Inicial"
+          descripcion: "Realizamos un análisis profundo..."
+        - icono: "jam-layout"
+          titulo: "Propuesta Detallada"
+          descripcion: "Desarrollamos un plan de acción..."
+        - icono: "jam-play"
+          titulo: "Implementación"
+          descripcion: "Ejecutamos las soluciones..."
+        - icono: "jam-check"
+          titulo: "Seguimiento y Optimización"
+          descripcion: "Medimos resultados, proporcionamos informes..."
 ---
 
 <!-- INI - if page.page_header.enable -->
@@ -168,6 +246,22 @@ servicios:
               {% endfor %}
             </div>
             {% endif %}
+
+            {% if servicio.flujo %}
+              <div class="flujo-proceso mt-5">
+                {% for paso in servicio.flujo %}
+                  <div class="step">
+                    <div class="step-icon"><i class="jam {{ paso.icono }}"></i></div>
+                    <div class="step-content">
+                      <p class="step-desc">{{ paso.descripcion }}</p>
+                      <div class="step-label">{{ paso.titulo }}</div>
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+            {% endif %}
+
+
           </div>
           {% endfor %}
         </div>
