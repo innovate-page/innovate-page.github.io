@@ -1,0 +1,151 @@
+---
+layout: page_nosotros
+page_header:
+  enable: true
+  title: "Impulsamos tu futuro con soluciones digitales"
+  background_image: "/assets/images/art/servicios.png"
+  image_class: "grayscale-image"
+
+que_ofrecemos:
+  enable: true
+  title: "Nuestras Capacidades"
+  sub_title: "En Innovate desarrollamos soluciones inteligentes aplicando metodologías ágiles, diseño centrado en el usuario y tecnologías emergentes. Desde la estrategia hasta la implementación, ofrecemos servicios que impulsan la eficiencia, la innovación y la transformación digital de tu organización."
+  image: "/assets/images/art/quines_somos.gif"
+
+servicios:
+  - id: digital-experience
+    nombre: "Digital Experience"
+    icono: "jam-screen"
+    titulo: "Diseñamos experiencias digitales memorables"
+    descripcion: "Combinamos UX/UI, mobile y portales para construir interfaces centradas en el usuario, intuitivas y modernas."
+    items:
+      - "Experiencias responsivas en todos los dispositivos."
+      - "Diseño centrado en el usuario (UX Research + UI Design)."
+      - "Portales modernos con alto rendimiento y autogestión."
+
+  - id: data-analytics
+    nombre: "Data & Analytics"
+    icono: "jam-database"
+    titulo: "Convierte datos en decisiones estratégicas"
+    descripcion: "Integramos tecnologías de analítica avanzada, visualización e inteligencia artificial para transformar datos en conocimiento útil."
+    items:
+      - "Gobierno de datos y control de calidad."
+      - "Modelos inteligentes con Machine Learning y AI."
+      - "Visualización de datos con dashboards interactivos."
+      - "Plataformas Big Data escalables y eficientes."
+
+  - id: digital-architecture
+    nombre: "Digital Architecture"
+    icono: "jam-layers"
+    titulo: "Arquitecturas digitales diseñadas para escalar"
+    descripcion: "Habilitamos arquitecturas resilientes, modulares y seguras que permiten a tu negocio crecer y adaptarse continuamente."
+    items:
+      - "Microfrontend architectures desacopladas y escalables."
+      - "Gestión eficiente de APIs con API Management."
+      - "Implementación de microservicios y serverless architectures."
+      - "Automatización segura mediante DevSecOps."
+      - "Diseño arquitectónico alineado a objetivos de negocio."
+
+  - id: enterprise-capabilities
+    nombre: "Enterprise Capabilities"
+    icono: "jam-settings-alt"
+    titulo: "Automatización que transforma tu operación"
+    descripcion: "Modernizamos tus procesos empresariales con soluciones digitales inteligentes centradas en eficiencia y productividad."
+    items:
+      - "Modelado y gestión de procesos (BPM)."
+      - "Automatización robótica de tareas (RPA, RDA)."
+      - "Procesamiento inteligente de documentos (IDP)."
+      - "Gestión de contenido empresarial (ECM)."
+
+  - id: agile
+    nombre: "Agile"
+    icono: "jam-refresh"
+    titulo: "Equipos ágiles que generan valor constante"
+    descripcion: "Promovemos una cultura ágil dentro de tu organización para acelerar la entrega de valor y adaptarse al cambio."
+    items:
+      - "Implementación de marcos de trabajo ágiles (Scrum, Kanban, SAFe)."
+      - "Creación de COEs (Centers of Excellence) y Chapters."
+      - "Transformación cultural y coaching ágil."
+
+
+---
+
+<!-- INI - if page.page_header.enable -->
+{% if page.page_header.enable %}
+  <div class="wrapper image-wrapper bg-image page-title-wrapper inverse-text" data-image-src="{{page.page_header.background_image}}">
+    <div class="container inner pb-100">
+      <div class="space100"></div>
+      <div class="row">
+        <div class="col-lg-7 col-xl-6">
+          <!-- INI - if page.page_header.title -->
+          {% if page.page_header.title %}
+            <h1 class="display-1" data-aos="fade-up" data-aos-delay="800">{{page.page_header.title}}</h1>
+            <div class="space10"></div>
+          {% endif %}
+          <!-- FIN - if page.page_header.title -->
+        </div>
+      </div>
+    </div>
+    <div class="divider"><svg xmlns="http://www.w3.org/2000/svg" class="fill-light-wrapper" preserveAspectRatio="none" viewBox="0 0 1070 52">
+      <path d="M0,52V0S247,91,505,32c261.17-59.72,565-13,565-13V52Z" /></svg>
+    </div>
+  </div>
+{% endif %}
+<!-- FIN - if page.page_header.enable -->
+
+<div class="wrapper">
+  <div class="container inner">
+    <!-- INI - if page.que_ofrecemos.enable -->
+    {% if page.que_ofrecemos.enable %}
+      <div class="wrapper">
+        <div class="container inner text-center">
+          <!-- INI - if page.que_ofrecemos.title -->
+          {% if page.que_ofrecemos.title %}
+            <h2 class="section-title" style="font-weight: bold;">{{page.que_ofrecemos.title}}</h2>
+          {% endif %}
+          <!-- FIN - if page.que_ofrecemos.title -->
+          
+          <!-- INI - if page.que_ofrecemos.sub_title -->
+          {% if page.que_ofrecemos.sub_title %}
+            <p class="lead larger">{{page.que_ofrecemos.sub_title}}</p>
+          {% endif %}
+          <!-- FIN - if page.que_ofrecemos.sub_title -->
+        </div>
+      </div>
+    {% endif %}
+    <!-- FIN - if page.que_ofrecemos.enable -->
+
+<!-- INI - Nuestras capacidades -->
+<div class="row" id="servicios-section">
+  <!-- Menú de servicios -->
+  <div class="col-md-4">
+    <ul class="nav flex-column nav-pills servicio-tabs" role="tablist">
+      {% for servicio in page.servicios %}
+      <li class="nav-item">
+        <a class="nav-link {% if forloop.first %}active{% endif %}" data-toggle="pill" href="#{{ servicio.id }}">
+          <i class="jam {{ servicio.icono }}"></i> {{ servicio.nombre }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <!-- Contenido de servicios -->
+  <div class="col-md-8 tab-content servicio-content">
+    {% for servicio in page.servicios %}
+    <div class="tab-pane fade {% if forloop.first %}show active{% endif %}" id="{{ servicio.id }}">
+      <h3 class="section-title" style="font-weight: bold;">{{ servicio.titulo }}</h3>
+      <p class="lead larger">{{ servicio.descripcion }}</p>
+      <ul class="list-unstyled servicio-items">
+        {% for item in servicio.items %}
+        <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+
+<!-- FIN - Fin de capacidades -->
+
+  </div>
+</div>
