@@ -1,0 +1,135 @@
+---
+layout: page_contactanos
+page_header:
+  enable: true
+  title: "Contáctanos"
+  background_image: "/assets/images/art/contactanos.png"
+  image_class: "grayscale-image"
+
+contact_area:
+  enable: true
+  title: "Ponte en contacto con nosotros y hagamos que la innovación suceda."
+  sub_title: "Tienes alguna pregunta o necesitas más información? No dudes en contactarnos. Estamos aquí para ayudarte."
+  action_email: "aracelitathyana@gmail.com"
+  
+  lists:
+    - title: Dirección
+      info_01: "Juan de Arona #755, Oficina 131 - Piso 2, San Isidro - Lima, Perú"
+      info_02: "7 de enero, Chiclayo"
+      icon: "icofont-location-pin"
+
+    - title: E-mail
+      info_01: "aracelitathyana@gmail.com"
+      info_02: "daviles@innovate.pe"
+      icon: "icofont-mail-box"
+
+    - title: Celular
+      info_01: "+51 971745518"
+      info_02: "+51 972597233"
+      icon: "icofont-telephone"
+
+  forms_data: 
+
+    - field_type: "input"
+      field_name: "txtNombre"
+      placeholder: "Nombres" 
+      error_message: "Se requiere el nombre" 
+
+    - field_type: "input"
+      field_name: "txtApellidos" 
+      placeholder: "Apellidos" 
+      error_message: "Se requiere el apellido"
+
+    - field_type: "input"
+      field_name: "txtEmail"
+      placeholder: "Email"
+      error_message: "Se requiere el email"
+
+    - field_type: "input"
+      field_name: "txtCelular"
+      placeholder: "Celular"
+      error_message: "Se requiere el celular"
+
+    - field_type: "textarea"
+      field_name: "txtMensaje"
+      placeholder: "Escribe tu mensaje aquí"
+      error_message: "Se requiere el mensaje"
+
+google_maps:
+  enable: true
+  google_map: |
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.23144559556!2d-77.03058032416631!3d-12.09630178814443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c979468138eb%3A0x9ce2a718743f97b9!2sWork%20Town%20JDA%20-%20San%20Isidro!5e0!3m2!1ses!2spe!4v1748731783069!5m2!1ses!2spe" style="width:100%; height: 500px; border:0" allowfullscreen=""></iframe>
+
+---
+<!-- INI - if page.page_header.enable -->
+{% if page.page_header.enable %}
+  <div class="wrapper image-wrapper bg-image page-title-wrapper inverse-text" data-image-src="{{page.page_header.background_image}}">
+    <div class="container inner pb-100">
+      <div class="space100"></div>
+      <div class="row">
+        <div class="col-lg-7 col-xl-6">
+          <!-- INI - if page.page_header.title -->
+          {% if page.page_header.title %}
+            <h1 class="display-1" data-aos="fade-up" data-aos-delay="800">{{page.page_header.title}}</h1>
+            <div class="space10"></div>
+          {% endif %}
+          <!-- FIN - if page.page_header.title -->
+        </div>
+      </div>
+    </div>
+    <div class="divider"><svg xmlns="http://www.w3.org/2000/svg" class="fill-light-wrapper" preserveAspectRatio="none" viewBox="0 0 1070 52">
+      <path d="M0,52V0S247,91,505,32c261.17-59.72,565-13,565-13V52Z" /></svg>
+    </div>
+  </div>
+{% endif %}
+<!-- FIN - if page.page_header.enable -->
+
+<div class="wrapper">
+  <div class="container inner">
+    <div class="wrapper light-wrapper">
+      <div class="wrapper light-wrapper">
+        <div class="container inner">
+          <h2 class="section-title">{{page.contact_area.title}}</h2>
+          <p class="lead larger">{{page.contact_area.sub_title}}</p>
+          <div class="row ">
+            <!-- INI - for list in page.contact_area.lists -->
+            <div class="col-lg-6 pl-lg-custom">
+              {% for list in page.contact_area.lists %}
+                <div class="d-flex flex-row">
+                  <div>
+                    <div class="icon color-default fs-34 mr-25"> <i class="{{list.icon}}"></i> </div>
+                  </div>
+                  <div>
+                    <h6 class="mb-5">{{list.title}}</h6>
+                    <address>{{list.info_01}} 
+                      <br class="d-none d-md-block"> {{list.info_02}}
+                    </address>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+            <!-- FIN - for list in page.contact_area.lists -->
+            <div class="col-lg-4 align-items-center">     
+                <img style="width: 300px;" src="{{relative_url}}/assets/images/art/contactanos_v3.gif"/>
+                <!-- INI - Boton de wsp -->
+                <div style="padding-top: 30px;">
+                  <a href="https://wa.me/+51972597233" target="_blank" class="btn btn-send" rel="noopener">
+                    Escríbenos por Whatsapp
+                  </a>
+                </div>
+                <!-- FIN - Boton de wsp -->
+            </div>
+          </div>
+          <div class="space50"></div>
+          <!-- INI - Inserta el mapa -->
+          <div class="row">
+            <div class="col-lg-12">     
+              {% include gmap.html %}
+            </div>
+          </div>
+          <!-- FIN - Inserta el mapa -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

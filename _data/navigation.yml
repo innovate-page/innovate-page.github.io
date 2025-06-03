@@ -5,15 +5,15 @@ main_menu:
     menu_type: "dropdown"
 
   - text: "Nosotros"
-    url: "/nosotros.html"
+    url: "nosotros.html"
     menu_type: "dropdown"
 
   - text: "Servicios"
-    url: "/servicios.html"
+    url: "servicios.html"
     menu_type: "dropdown"
 
   - text: "Contáctanos"
-    url: "/portfolios/"
+    url: "contactanos.html"
     menu_type: "dropdown"
 
   # - text: "Blog"
