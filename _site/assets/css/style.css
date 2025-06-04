@@ -7406,21 +7406,24 @@ footer.inverse-text address {
   border: 1px solid #ddd;
   border-left: 3px solid transparent;
   border-radius: 6px;
-  transition: background 0.3s, border-left-color 0.3s;
+  transition: none; /* sin transición */
 }
 
-
+/* Desactiva el hover */
 .servicio-tabs .nav-link:hover {
-  background-color: #f8f9fa;
-  border-left-color: #848abd;
+  background-color: #f8f9fc;
+  border-left-color: transparent;
 }
 
+/* Estilo cuando está activo (seleccionado) */
 .servicio-tabs .nav-link.active {
-  background-color: #e8e9f5;
-  border-left-color: #848abd;
+  background-color: #f8f9fc;
+  border-left: 3px solid #848abd;
   color: #848abd;
-  border: 1px solid #848abd;
+  border: 3px solid #ddd;
+  border-left-color: #848abd; /* reforzamos el borde izquierdo */
 }
+
 
 
 /* Contenido de servicios */
