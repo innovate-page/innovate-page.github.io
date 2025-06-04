@@ -7404,7 +7404,7 @@ footer.inverse-text address {
   margin-bottom: 10px;
   background: #f8f9fc;
   border: 1px solid #ddd;
-  border-left: 3px solid transparent;
+  border-left: 3px solid #ddd;
   border-radius: 6px;
   transition: none; /* sin transición */
 }
@@ -7413,6 +7413,7 @@ footer.inverse-text address {
 .servicio-tabs .nav-link:hover {
   background-color: #f8f9fc;
   border-left-color: transparent;
+  border-left: 3px solid #ddd;
 }
 
 /* Estilo cuando está activo (seleccionado) */
