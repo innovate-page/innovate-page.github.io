@@ -39,32 +39,32 @@ servicios:
       timeline_area:
         tabs:
           - title: "Análisis y Planificación"
-            icon: "search"
+            icon: "icofont-brainstorming"
             description: |
               Trabajamos estrechamente con usted para entender sus necesidades y objetivos, definiendo los requisitos detallados del proyecto.
 
           - title: "Diseño"
-            icon: "crop"  
+            icon: "icofont-ui-browser"  
             description: |
               Creamos prototipos y arquitecturas de software que sirven como base para el desarrollo.
 
           - title: "Desarrollo"
-            icon: "grid"
+            icon: "icofont-terminal"
             description: |
               Utilizamos metodologías ágiles para un desarrollo iterativo, permitiendo ajustes y feedback constante.
 
           - title: "Pruebas y Control de Calidad"
-            icon: "task-list"
+            icon: "icofont-check-circled"
             description: |
               Realizamos pruebas exhaustivas para garantizar un producto final robusto y libre de errores.
                 
           - title: "Implementación"
-            icon: "set-square"
+            icon: "icofont-cloud-upload"
             description: |
               Desplegamos la solución en su entorno, asegurando una transición suave.
 
           - title: "Mantenimiento y Soporte"
-            icon: "arrow-square-up-right"
+            icon: "icofont-tools"
             description: |
               Ofrecemos soporte continuo y actualizaciones para mantener su software optimizado y actualizado.
 
@@ -269,7 +269,8 @@ servicios:
                           </div>
                         </article>
                         <div class="timeline-item-icon">
-                          <i class="jam jam-{{item_timeline.icon}}"></i>
+                          <i class="{% if item_timeline.icon contains 'jam-' %}jam{% else %}{{ item_timeline.icon | split: '-' | first }}{% endif %} {{ item_timeline.icon }}"></i>
+
                         </div>
                       </div>
                       {% endfor %}
