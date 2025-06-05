@@ -7383,20 +7383,26 @@ footer.inverse-text address {
   }
 }
 
+/* ========== Sección Servicios ========== */
 
-/*Seccion Servicios*/
-
-/* Contenedor principal */
+/* Contenedor principal: ahora correctamente horizontal */
 #servicios-section {
+  display: flex;
+  gap: 40px;
   margin-top: 50px;
+  align-items: flex-start;
 }
 
-/* MenÃº lateral de servicios */
+/* Menú lateral izquierdo */
 .servicio-tabs {
-  border-right: 1px solid #ddd;
-  padding: 20px;
+  width: 300px;
+  position: sticky;
+  top: 120px;
+  height: fit-content;
+  padding: 0;
 }
 
+/* Estilos de los botones de menú */
 .servicio-tabs .nav-link {
   font-weight: 500;
   color: #333;
@@ -7406,39 +7412,25 @@ footer.inverse-text address {
   border: 1px solid #ddd;
   border-left: 3px solid #ddd;
   border-radius: 6px;
-  transition: none; /* sin transición */
+  transition: none;
 }
 
-/* Desactiva el hover */
 .servicio-tabs .nav-link:hover {
   background-color: #f8f9fc;
-  border-left-color: transparent;
   border-left: 3px solid #ddd;
 }
 
-/* Estilo cuando está activo (seleccionado) */
 .servicio-tabs .nav-link.active {
   background-color: #f8f9fc;
+  border: 3px solid #ddd;
   border-left: 3px solid #848abd;
   color: #848abd;
-  border: 3px solid #ddd;
-  border-left-color: #848abd; /* reforzamos el borde izquierdo */
 }
 
-
-
-/* Contenido de servicios */
+/* Contenido del servicio derecho */
 .servicio-content {
-  max-height: 510px; /* o el alto que quieras igualar */
-  overflow-y: auto;
-  padding-left: 30px;
-}
-
-.servicio-content::-webkit-scrollbar {
-  width: 0px;
-}
-.servicio-content::-webkit-scrollbar-thumb {
-  background-color: transparent;
+  flex: 1;
+  padding-left: 0;
 }
 
 .servicio-content h3 {
@@ -7468,55 +7460,31 @@ footer.inverse-text address {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
 }
 
-.flujo-proceso {
-  position: relative;
-  margin-left: 30px;
-  border-left: 2px solid #ccc;
-  padding-left: 30px;
+/* Quitar scroll innecesario */
+.servicio-content::-webkit-scrollbar {
+  width: 0;
+}
+.servicio-content::-webkit-scrollbar-thumb {
+  background-color: transparent;
 }
 
-.step {
-  display: flex;
-  align-items: center;
-  margin-bottom: 40px;
-  position: relative;
+/* ===== Responsivo ===== */
+@media (max-width: 991px) {
+  #servicios-section {
+    flex-direction: column;
+  }
+
+  .servicio-tabs,
+  .servicio-content {
+    width: 100%;
+  }
+
+  .servicio-tabs {
+    position: relative;
+    top: auto;
+  }
 }
 
-.step-icon {
-  width: 50px;
-  height: 50px;
-  background: #fff;
-  border: 2px solid #848abd;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 22px;
-  color: #848abd;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-  position: absolute;
-  left: -55px;
-  top: 0;
-}
-
-.step-content {
-  margin-left: 30px;
-}
-
-.step-desc {
-  margin: 0 0 10px;
-  color: #444;
-}
-
-.step-label {
-  display: inline-block;
-  background: #848abd;
-  color: #fff;
-  font-weight: bold;
-  padding: 6px 16px;
-  border-radius: 6px;
-  font-size: 14px;
-}
 
 
 
