@@ -18,17 +18,20 @@ servicios:
     - id: digital-architecture
       nombre: "Digital Architecture"
       icono: "jam-layers"
-      titulo: "Diseñamos experiencias digitales memorables"
-      descripcion: "Combinamos UX/UI, mobile y portales para construir interfaces centradas en el usuario, intuitivas y modernas."
+      titulo: "Diseñamos y optimizamos la arquitectura digital de tu empresa"
+      descripcion: "Para que sea escalable, segura y alineada a tus objetivos, facilitando la integración de nuevas tecnologías y la modernización de sistemas."
       beneficios:
-        - titulo: "UX/UI"
-          descripcion: "Diseño enfocado en la experiencia del usuario y la interfaz intuitiva."
+        - titulo: "Microfrontend Architectures"
+          descripcion: "Módulos web independientes que escalan fácilmente y simplifican el mantenimiento."
           icono: "icofont-interface"
-        - titulo: "Mobile"
-          descripcion: "Soluciones adaptadas a dispositivos móviles para mayor accesibilidad."
+        - titulo: "API Management"
+          descripcion: "Gestión integral de APIs: creación, seguridad e integración de sistemas."
           icono: "icofont-ui-browser"
-        - titulo: "Portals"
-          descripcion: "Portales web autogestionables, rápidos y modernos."
+        - titulo: "Microservices & Serverless Architectures"
+          descripcion: "Descomponemos aplicaciones en servicios independientes o funciones sin servidor, logrando mayor flexibilidad, escalabilidad y eficiencia operativa."
+          icono: "jam-layout"
+        - titulo: "Digital Architecture Design"
+          descripcion: "Planificamos y estructuramos la infraestructura tecnológica, definiendo componentes y mejores prácticas para impulsar la transformación digital y el crecimiento."
           icono: "jam-layout"
       timeline_area:
         tabs:
@@ -55,7 +58,7 @@ servicios:
           - title: "Implementación"
             icon: "icofont-cloud-upload"
             description: |
-              Desplegamos la solución en su entorno, asegurando una transición suave.
+              Desplegamos la solución en su entorno, asegurando una transición suave y coordinando el despliegue final con soporte inmediato
 
           - title: "Mantenimiento y Soporte"
             icon: "icofont-tools"
@@ -71,7 +74,7 @@ servicios:
         - titulo: "Data Governance"
           descripcion: "Gestión y control efectivo de datos en entornos cloud."
           icono: "icofont-data"
-        - titulo: "Machine Learnign & AI"
+        - titulo: "Machine Learning & AI"
           descripcion: "Implementación de soluciones inteligentes en la nube."
           icono: "icofont-bulb-alt"
         - titulo: "Data Visualization"
@@ -207,22 +210,23 @@ services_area:
         <div class="servicio-content tab-content">
           {% for servicio in page.servicios.items %}
           <div class="tab-pane fade {% if forloop.first %}show active{% endif %}" id="{{ servicio.id }}">
-            <h3 class="section-title" style="font-weight: bold;">{{ servicio.titulo }}</h3>
+            <h2 class="section-title">{{ servicio.titulo }}</h2>
             <p class="lead larger">{{ servicio.descripcion }}</p>
 
             {% if servicio.beneficios %}
             <div class="row">
               {% for beneficio in servicio.beneficios %}
-              <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm border-0">
+              <!-- <div class="col-md-4 mb-4"> Muestra 3 tarjetas de beneficios -->
+              <div class="col-12 col-sm-6 mb-4">
+                <div class="card h-100  border-0 card-beneficio">
                   <div class="card-body">
-                    <h5 class="card-title d-flex align-items-center justify-content-start gap-2" style="font-weight: 600;">
+                    <div class="card-icon text-center mb-3">
                       {% if beneficio.icono %}
-                        <i class="{% if beneficio.icono contains 'jam-' %}jam{% else %}{{ beneficio.icono | split: '-' | first }}{% endif %} {{ beneficio.icono }}" style="font-size: 20px; margin-right: 8px;"></i>
+                        <i class="{% if beneficio.icono contains 'jam-' %}jam{% else %}{{ beneficio.icono | split: '-' | first }}{% endif %} {{ beneficio.icono }} fs-42 color-default"></i>
                       {% endif %}
-                      {{ beneficio.titulo }}
-                    </h5>
-                    <p class="card-text">{{ beneficio.descripcion }}</p>
+                    </div>
+                    <h5 class="card-title text-center" style="font-weight: 600;">{{ beneficio.titulo }}</h5>
+                    <p class="card-text text-center">{{ beneficio.descripcion }}</p>
                   </div>
                 </div>
               </div>

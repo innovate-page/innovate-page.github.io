@@ -305,9 +305,10 @@ h6.text-uppercase,
     line-height: 1.3rem;
 }
 .section-title {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     line-height: 1.8rem;
     margin-bottom: 1rem;
+    font-weight: 600;
 }
 .section-title.larger {
     font-size: 1.8rem;
@@ -376,7 +377,7 @@ h6.text-uppercase,
     line-height: 1.6rem;
 }
 .lead.larger {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.7rem;
 }
 .text-muted {
@@ -7405,7 +7406,7 @@ footer.inverse-text address {
 
 /* Estilos de los botones de menú */
 .servicio-tabs .nav-link {
-  font-weight: 500;
+  font-weight: 800;
   color: #333;
   padding: 20px 15px;
   margin-bottom: 10px;
@@ -7486,7 +7487,12 @@ footer.inverse-text address {
   }
 }
 
-
+.card-beneficio {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
 
 
