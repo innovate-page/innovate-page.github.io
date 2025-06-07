@@ -21,16 +21,13 @@ servicios:
       titulo: "Diseñamos experiencias digitales memorables"
       descripcion: "Combinamos UX/UI, mobile y portales para construir interfaces centradas en el usuario, intuitivas y modernas."
       beneficios:
-        - titulo: "Microfrontend Architectures"
+        - titulo: "UX/UI"
           descripcion: "Diseño enfocado en la experiencia del usuario y la interfaz intuitiva."
           icono: "icofont-interface"
-        - titulo: "API Management"
+        - titulo: "Mobile"
           descripcion: "Soluciones adaptadas a dispositivos móviles para mayor accesibilidad."
           icono: "icofont-ui-browser"
-        - titulo: "Microservices & Serverless Architectures"
-          descripcion: "Portales web autogestionables, rápidos y modernos."
-          icono: "jam-layout"
-          - titulo: "Digital Architecture Design"
+        - titulo: "Portals"
           descripcion: "Portales web autogestionables, rápidos y modernos."
           icono: "jam-layout"
       timeline_area:
@@ -71,16 +68,13 @@ servicios:
       titulo: "Acelera tu migración hacia la nube"
       descripcion: "Guiamos a tu organización en su transición hacia arquitecturas cloud modernas, seguras y escalables."
       beneficios:
-        - titulo: "Cloud Assessment"
+        - titulo: "Data Governance"
           descripcion: "Gestión y control efectivo de datos en entornos cloud."
           icono: "icofont-data"
-        - titulo: "Cloud Migration"
+        - titulo: "Machine Learnign & AI"
           descripcion: "Implementación de soluciones inteligentes en la nube."
           icono: "icofont-bulb-alt"
-        - titulo: "Cloud Optimization"
-          descripcion: "Dashboards personalizados para análisis de datos en tiempo real."
-          icono: "icofont-dashboard-web"
-          - titulo: "Hybrid & Multi-Cloud Strategies"
+        - titulo: "Data Visualization"
           descripcion: "Dashboards personalizados para análisis de datos en tiempo real."
           icono: "icofont-dashboard-web"
 
@@ -184,7 +178,7 @@ services_area:
     <!-- INI - if page.que_ofrecemos.enable -->
     {% if page.que_ofrecemos.enable %}
       <div class="wrapper">
-        <div class="container inner text-center">
+        <div class="container text-center">
           {% if page.que_ofrecemos.title %}
             <h2 class="section-title" style="font-weight: bold;">{{page.que_ofrecemos.title}}</h2>
           {% endif %}
@@ -272,7 +266,7 @@ services_area:
     {% endif %}
     <!-- FIN - if page.servicios.enable -->
 
-    <div class="space100"></div>
+    <div class="space50"></div>
 
     <!-- INI - if page.services_area.enable -->
       {% if page.services_area.enable %}
