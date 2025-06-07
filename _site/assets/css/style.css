@@ -7368,9 +7368,17 @@ footer.inverse-text address {
 }
 
 .img-responsiva {
-  max-width: 100%;
-  height: auto;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+  height: auto;
+}
+
+@media (max-width: 991.98px) {
+  .img-responsiva {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 991.98px) {
