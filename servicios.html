@@ -6,12 +6,6 @@ page_header:
   background_image: "/assets/images/art/servicios.png"
   image_class: "grayscale-image"
 
-services_area:
-  enable: true
-  title: "Modelo de Servicio"
-  sub_title: "Aplicamos un enfoque estructurado, ágil y escalable que combina arquitectura cloud y prácticas DevOps para garantizar continuidad, eficiencia y resultados sostenibles."
-  image: "/assets/images/art/modelo_servicio_v1.gif"
-
 que_ofrecemos:
   enable: true
   title: "Nuestros Servicios"
@@ -27,13 +21,16 @@ servicios:
       titulo: "Diseñamos experiencias digitales memorables"
       descripcion: "Combinamos UX/UI, mobile y portales para construir interfaces centradas en el usuario, intuitivas y modernas."
       beneficios:
-        - titulo: "UX/UI"
+        - titulo: "Microfrontend Architectures"
           descripcion: "Diseño enfocado en la experiencia del usuario y la interfaz intuitiva."
           icono: "icofont-interface"
-        - titulo: "Mobile"
+        - titulo: "API Management"
           descripcion: "Soluciones adaptadas a dispositivos móviles para mayor accesibilidad."
           icono: "icofont-ui-browser"
-        - titulo: "Portals"
+        - titulo: "Microservices & Serverless Architectures"
+          descripcion: "Portales web autogestionables, rápidos y modernos."
+          icono: "jam-layout"
+          - titulo: "Digital Architecture Design"
           descripcion: "Portales web autogestionables, rápidos y modernos."
           icono: "jam-layout"
       timeline_area:
@@ -74,18 +71,21 @@ servicios:
       titulo: "Acelera tu migración hacia la nube"
       descripcion: "Guiamos a tu organización en su transición hacia arquitecturas cloud modernas, seguras y escalables."
       beneficios:
-        - titulo: "Data Governance"
+        - titulo: "Cloud Assessment"
           descripcion: "Gestión y control efectivo de datos en entornos cloud."
           icono: "icofont-data"
-        - titulo: "Machine Learning & AI"
+        - titulo: "Cloud Migration"
           descripcion: "Implementación de soluciones inteligentes en la nube."
           icono: "icofont-bulb-alt"
-        - titulo: "Data Visualization"
+        - titulo: "Cloud Optimization"
+          descripcion: "Dashboards personalizados para análisis de datos en tiempo real."
+          icono: "icofont-dashboard-web"
+          - titulo: "Hybrid & Multi-Cloud Strategies"
           descripcion: "Dashboards personalizados para análisis de datos en tiempo real."
           icono: "icofont-dashboard-web"
 
     - id: cx
-      nombre: "CX"
+      nombre: "Customer Experience"
       icono: "jam-user"
       titulo: "Diseña experiencias que fidelizan"
       descripcion: "Creamos soluciones digitales que mejoran la interacción con el cliente, integrando arquitectura moderna y herramientas personalizadas."
@@ -147,13 +147,20 @@ servicios:
         - titulo: "Transformación cultural"
           descripcion: "Adopción de una mentalidad ágil en toda la organización."
           icono: "icofont-newspaper"
+
+services_area:
+  enable: true
+  title: "Nuestro enfoque metodológico"
+  sub_title: "Aplicamos un enfoque estructurado, ágil y escalable que combina arquitectura cloud y prácticas DevOps para garantizar continuidad, eficiencia y resultados sostenibles."
+  image: "/assets/images/art/modelo_servicio_v1.gif"
 ---
 
 <!-- INI - if page.page_header.enable -->
+
 {% if page.page_header.enable %}
   <div class="wrapper image-wrapper bg-image page-title-wrapper inverse-text" data-image-src="{{page.page_header.background_image}}">
     <div class="container inner pb-100">
-      <div class="space100"></div>
+      <!-- <div class="space100"></div> -->
       <div class="row">
         <div class="col-lg-7 col-xl-6">
           {% if page.page_header.title %}
@@ -171,26 +178,6 @@ servicios:
   </div>
 {% endif %}
 <!-- FIN - if page.page_header.enable -->
-
-<!-- INI - if page.services_area.enable -->
-  {% if page.services_area.enable %}
-    <div class="wrapper">
-      <div class="container inner text-center">
-        {% if page.services_area.title %}
-          <h2 class="section-title" style="font-weight: bold;">{{ page.services_area.title }}</h2>
-        {% endif %}
-        {% if page.services_area.sub_title %}
-          <p class="lead larger">{{ page.services_area.sub_title }}</p>
-        {% endif %}
-        {% if page.services_area.image %}
-          <div class="mt-4">
-            <img src="{{ page.services_area.image }}" alt="Modelo de Servicio" class="img-responsiva"/>
-          </div>
-        {% endif %}
-      </div>
-    </div>
-  {% endif %}
-<!-- FIN - if page.services_area.enable -->
 
 <div class="wrapper">
   <div class="container inner">
@@ -223,7 +210,6 @@ servicios:
             {% endfor %}
           </ul>
         </div>
-
         <div class="servicio-content tab-content">
           {% for servicio in page.servicios.items %}
           <div class="tab-pane fade {% if forloop.first %}show active{% endif %}" id="{{ servicio.id }}">
@@ -270,7 +256,6 @@ servicios:
                         </article>
                         <div class="timeline-item-icon">
                           <i class="{% if item_timeline.icon contains 'jam-' %}jam{% else %}{{ item_timeline.icon | split: '-' | first }}{% endif %} {{ item_timeline.icon }}"></i>
-
                         </div>
                       </div>
                       {% endfor %}
@@ -287,11 +272,31 @@ servicios:
     {% endif %}
     <!-- FIN - if page.servicios.enable -->
 
-    <div class="space50"></div>
+    <div class="space100"></div>
 
-    <div class="wrapper align-items-center" >
+    <!-- INI - if page.services_area.enable -->
+      {% if page.services_area.enable %}
+        <div class="wrapper">
+          <div class="container inner text-center">
+            {% if page.services_area.title %}
+              <h2 class="section-title" style="font-weight: bold;">{{ page.services_area.title }}</h2>
+            {% endif %}
+            {% if page.services_area.sub_title %}
+              <p class="lead larger">{{ page.services_area.sub_title }}</p>
+            {% endif %}
+            {% if page.services_area.image %}
+              <div class="mt-4">
+                <img src="{{ page.services_area.image }}" alt="Modelo de Servicio" class="img-responsiva"/>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
+    <!-- FIN - if page.services_area.enable -->
+
+    <!-- <div class="wrapper align-items-center" >
         <img class="img-responsiva" src="{{relative_url}}/assets/images/art/enfoque.gif"/>
-    </div>
+    </div> -->
 
   </div>
 </div>

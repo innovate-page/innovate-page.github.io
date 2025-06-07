@@ -6479,7 +6479,8 @@ footer.inverse-text address {
     }
     .navbar .navbar-nav .nav-link {
         padding-right: 1.2rem;
-        padding-left: 1.2rem
+        padding-left: 1.2rem;
+        font-size: 1.2rem;
     }
     .dropdown-menu:not(.mega-menu):not(.image-dropdown) {
         padding: 0.6rem 0;
