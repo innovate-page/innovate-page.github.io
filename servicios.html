@@ -27,13 +27,13 @@ servicios:
         - titulo: "API Management"
           descripcion: "Gestión integral de APIs: creación, seguridad e integración de sistemas."
           icono: "icofont-ui-browser"
-        - titulo: "Microservices & Serverless Architectures"
-          descripcion: "Descomponemos aplicaciones en servicios independientes o funciones sin servidor, logrando mayor flexibilidad, escalabilidad y eficiencia operativa."
+        - titulo: "Serverless Architectures"
+          descripcion: "Aplicaciones divididas en servicios independientes y escalables."
           icono: "jam-layout"
         - titulo: "Digital Architecture Design"
-          descripcion: "Planificamos y estructuramos la infraestructura tecnológica, definiendo componentes y mejores prácticas para impulsar la transformación digital y el crecimiento."
+          descripcion: "Aplicaciones divididas en servicios independientes y escalables."
           icono: "jam-layout"
-      timeline_area:
+      <!-- timeline_area:
         tabs:
           - title: "Análisis y Planificación"
             icon: "icofont-brainstorming"
@@ -63,7 +63,7 @@ servicios:
           - title: "Mantenimiento y Soporte"
             icon: "icofont-tools"
             description: |
-              Ofrecemos soporte continuo y actualizaciones para mantener su software optimizado y actualizado.
+              Ofrecemos soporte continuo y actualizaciones para mantener su software optimizado y actualizado. -->
 
     - id: cloud-journey
       nombre: "Cloud Journey"
@@ -235,14 +235,13 @@ services_area:
             {% endif %}
 
             <!-- INI - if page.servicios.enable -->
-            {% if servicio.timeline_area and servicio.timeline_area.tabs %}
+            <!-- {% if servicio.timeline_area and servicio.timeline_area.tabs %}
               <div class="services-area">
                 <section class="section-timeline container">
                   <div class="section-timeline-content">
                     <div class="section-timeline-wrapper">
                       {% for item_timeline in servicio.timeline_area.tabs %}
                       {% assign chck_number = forloop.index | modulo: 2 %}
-                      <!-- 1 -->
                       <div class="section-timeline-item {% if chck_number == 1 %} flex-row {% else %} flex-row-reverse {% endif %}">
                         <article class="{% if chck_number == 1 %} flex-row {% else %} flex-row-reverse {% endif %}">
                           <div class="timeline-item-content">
@@ -261,7 +260,7 @@ services_area:
                   </div>
                 </section>
               </div>
-            {% endif %}
+            {% endif %} -->
             <!-- FIN - if page.que_ofrecemos.enable -->
           </div>
           {% endfor %}
