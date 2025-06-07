@@ -13,7 +13,7 @@ slider_area:
   image_class: "grayscale-image"
   buttons:
     - text: "Innovate ahora"
-      url: "#"
+      url: "/contactanos.html"
       icon: "jam jam-lightbulb"
 
 features_area:
@@ -145,7 +145,7 @@ two_coumns_two:
         	  <div class="col-md-7 mx-auto">
 		          <h2 class="title-color color-gray text-center">{{page.features_area.title}}</h2>
 				      <h3 class="display-3 text-center">{{page.features_area.sub_title}}</h3>
-				      <div class="space40"></div>
+				      <div class="space50"></div>
         	  </div>
           </div>	
 		      <div class="row gutter-60 text-center">
@@ -178,7 +178,7 @@ two_coumns_two:
         <div class="video-area">
           <div class="row">
             <div class="col-md-7 mx-auto">
-              <div class="space100"></div>
+              
               <h2 class="title-color color-gray text-center">{{page.video_area.title}}</h2>
               <h3 class="display-3 mb-0 text-center">{{page.video_area.sub_title}}</h3>
             </div>
@@ -234,7 +234,7 @@ two_coumns_two:
       <!-- INI - if page.two_coumns_two.enable -->
       {% if page.two_coumns_two.enable %}
         <div class="two-column-two">
-	        <div class="space150"></div>
+	        <div class="space50"></div>
 	        <div class="row align-items-center">
             <!-- INI - if page.two_coumns_two.image -->
 	          {% if page.two_coumns_two.image %}
@@ -261,38 +261,37 @@ two_coumns_two:
         </div>
       {% endif %}
       <!-- FIN - if page.two_coumns_two.enable -->
+
+      <!-- INI - Carousel de Clientes -->
+      <div class="carousel-wrapper position-relative">
+        <div class="container inner position-relative">
+          <h2 class="section-title mb-40 text-center">Nuestros clientes</h2>
+          <button class="custom-owl-prev">‹</button>
+          <div class="carousel owl-carousel clients" data-margin="30" data-loop="true" data-dots="false" data-autoplay="true" data-autoplay-timeout="3000" >
+            <!-- items -->
+            <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/1.png" alt="" /></div>
+            <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/2.png" alt="" /></div>
+            <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/3.png" alt="" /></div>
+            <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/4.png" alt="" /></div>
+            <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/5.png" alt="" /></div>
+            <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/6.png" alt="" /></div>
+            <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/7.png" alt="" /></div>
+            <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/8.png" alt="" /></div>
+            <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/9.png" alt="" /></div>
+            <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/10.png" alt="" /></div>
+            <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/11.png" alt="" /></div>
+            <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/12.png" alt="" /></div>
+            <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/13.png" alt="" /></div>
+            <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/14.png" alt="" /></div>
+            <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/15.png" alt="" /></div>
+            <!-- ...más items... -->
+          </div>
+          <button class="custom-owl-next">›</button>
+        </div>
+      </div>
+      <!-- FIN - Carousel de Clientes -->
     </div>
   </div>
   <!-- FIN - BODY -->
-
-  <!-- INI - Carousel de Clientes -->
-  <div class="carousel-wrapper position-relative">
-    <div class="container inner position-relative">
-      <h2 class="section-title mb-40 text-center">Nuestros clientes</h2>
-      <button class="custom-owl-prev">‹</button>
-      <div class="carousel owl-carousel clients" data-margin="30" data-loop="true" data-dots="false" data-autoplay="true" data-autoplay-timeout="3000" >
-        <!-- items -->
-        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/1.png" alt="" /></div>
-        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/2.png" alt="" /></div>
-        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/3.png" alt="" /></div>
-        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/4.png" alt="" /></div>
-        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/5.png" alt="" /></div>
-        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/6.png" alt="" /></div>
-        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/7.png" alt="" /></div>
-        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/8.png" alt="" /></div>
-        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/9.png" alt="" /></div>
-        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/10.png" alt="" /></div>
-        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/11.png" alt="" /></div>
-        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/12.png" alt="" /></div>
-        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/13.png" alt="" /></div>
-        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/14.png" alt="" /></div>
-        <div class="item pl-15 pr-15"><img src="{{relative_url}}/assets/innovate/images/clientes/15.png" alt="" /></div>
-        <!-- ...más items... -->
-      </div>
-      <button class="custom-owl-next">›</button>
-    </div>
-  </div>
-  <!-- FIN - Carousel de Clientes -->
-
 {% include footer_4.html light_logo="true" %}
 </div>    

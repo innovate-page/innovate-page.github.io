@@ -308,7 +308,6 @@ h6.text-uppercase,
     /* font-size: 1.5rem; */
     line-height: 1.8rem;
     margin-bottom: 1rem;
-    font-weight: 600;
 }
 .section-title.larger {
     font-size: 1.8rem;
@@ -384,14 +383,14 @@ h6.text-uppercase,
     color: #808080 !important;
 }
 .inner {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 .inner-top {
-    padding-top: 6rem;
+    padding-top: 4rem;
 }
 .inner-bottom {
-    padding-bottom: 6rem;
+    padding-bottom: 4rem;
 }
 footer .inner {
     padding-bottom: 5rem;
@@ -7756,4 +7755,21 @@ footer.inverse-text address {
     .section-timeline-item:nth-child(even) > .timeline-item-icon::before {
         content: none;
     }
+
+    /* Cambia el color del enlace de correo para que sea igual al texto normal */
+.address-email {
+  color: inherit;
+  text-decoration: none;
+}
+.address-email:hover {
+  text-decoration: underline;
+}
+}
+
+.wrapper.overflow-top {
+    pointer-events: none;
+}
+.wrapper.overflow-top img,
+.wrapper.overflow-top figure {
+    pointer-events: auto;
 }

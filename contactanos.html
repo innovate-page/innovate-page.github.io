@@ -92,15 +92,23 @@ google_maps:
             <!-- INI - for list in page.contact_area.lists -->
             <div class="col-lg-6 pl-lg-custom">
               {% for list in page.contact_area.lists %}
-                <div class="d-flex flex-row">
+                <div class="d-flex flex-row mb-3">
                   <div>
-                    <div class="icon color-default fs-34 mr-25"> <i class="{{list.icon}}"></i> </div>
+                    <div class="icon color-default fs-34 mr-25"> 
+                      <i class="{{list.icon}}"></i> 
+                    </div>
                   </div>
                   <div>
                     <h6 class="mb-5">{{list.title}}</h6>
-                    <address>{{list.info_01}} 
-                      <br class="d-none d-md-block"> {{list.info_02}}
-                    </address>
+                    {% if list.title == "E-mail" %}
+                      <address>
+                        <a href="mailto:{{list.info_01}}" style="color: inherit; text-decoration: none;"> {{list.info_01}}</a>
+                      </address>
+                    {% else %}
+                      <address>
+                        {{list.info_01}}<br class="d-none d-md-block"> {{list.info_02}}
+                      </address>
+                    {% endif %}
                   </div>
                 </div>
               {% endfor %}
