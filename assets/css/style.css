@@ -7781,3 +7781,9 @@ footer.inverse-text address {
 .wrapper.overflow-top figure {
     pointer-events: auto;
 }
+
+.lead.description {
+    font-size: 16px;
+    line-height: 1.7rem;
+    color: #555;
+}
