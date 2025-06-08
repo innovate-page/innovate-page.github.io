@@ -7386,11 +7386,11 @@ footer.inverse-text address {
     padding-left: 0 !important;
   }
 }
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
   .pl-lg-custom {
     padding-left: 150px !important;
   }
-}
+} */
 
 /* ========== Sección Servicios ========== */
 
