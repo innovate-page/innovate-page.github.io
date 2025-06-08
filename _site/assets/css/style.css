@@ -378,6 +378,7 @@ h6.text-uppercase,
 .lead.larger {
     font-size: 1rem;
     line-height: 1.7rem;
+    text-align: justify; /*Aplicar directamente para ver si se aplica a todos*/
 }
 .text-muted {
     color: #808080 !important;
@@ -2303,7 +2304,7 @@ ol {
 /*-----------------------------------------------------------------------------------*/
 /*  27. CLIENTS
 /*-----------------------------------------------------------------------------------*/
-.clients img {
+/* .clients img {
     opacity: 0.8;
     filter: grayscale(100%);
     transition: all 300ms ease-in-out;
@@ -2312,7 +2313,7 @@ ol {
 .clients img:hover {
     opacity: 1;
     filter: grayscale(0%);
-}
+} */
 
 /*-----------------------------------------------------------------------------------*/
 /*  28. FIGURE
@@ -6480,7 +6481,7 @@ footer.inverse-text address {
     .navbar .navbar-nav .nav-link {
         padding-right: 1.2rem;
         padding-left: 1.2rem;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .dropdown-menu:not(.mega-menu):not(.image-dropdown) {
         padding: 0.6rem 0;
@@ -7348,6 +7349,7 @@ footer.inverse-text address {
   line-height: 1;
    align-items: center;
   justify-content: center;
+  margin-top: 35px;
 }
 
 .custom-owl-prev {
