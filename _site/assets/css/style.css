@@ -6409,6 +6409,7 @@ footer.inverse-text address {
     .navbar.transparent .navbar-nav .nav-link {
         padding-top: 2rem;
         padding-bottom: 2rem;
+        font-size: 1rem;
     }
     .navbar.fixed .navbar-nav .nav-link,
     .navbar.navbar-fancy .navbar-nav .nav-link {
