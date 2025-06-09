@@ -6888,6 +6888,7 @@ footer.inverse-text address {
     form .row>[class*="col-"],
     .block-wrapper>[class*="col-"] {
         margin-bottom: 0;
+        text-align: center; /*Para centrar contenido de contactanos*/
     }
     .grid-view .post {
         margin-bottom: 3rem;

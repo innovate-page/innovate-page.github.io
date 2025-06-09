@@ -14,7 +14,7 @@ contact_area:
   
   lists:
     - title: Dirección
-      info_01: "Juan de Arona 755, 2° Piso - Of. 131, San Isidro - Lima, Perú"
+      info_01: "Juan de Arona 755, 2° Piso - Of. 131\nSan Isidro - Lima, Perú"
       icon: "icofont-location-pin"
 
     - title: E-mail
@@ -106,8 +106,11 @@ google_maps:
                         <a href="mailto:{{list.info_01}}" style="color: inherit; text-decoration: none;"> {{list.info_01}}</a>
                       </address>
                     {% else %}
-                      <address>
+                      <!-- <address>
                         {{list.info_01}}<br class="d-none d-md-block"> {{list.info_02}}
+                      </address> -->
+                      <address>
+                        {{ list.info_01 | newline_to_br }}
                       </address>
                     {% endif %}
                   </div>
@@ -119,7 +122,7 @@ google_maps:
                 <img style="width: 300px;" src="{{relative_url}}/assets/images/art/contactanos_v3.gif"/>
                 <!-- INI - Boton de wsp -->
                 <div style="padding-top: 30px;">
-                  <a href="https://wa.me/+51972597233" target="_blank" class="btn btn-send" rel="noopener">
+                  <a href="https://wa.me/+51948656050" target="_blank" class="btn btn-send" rel="noopener">
                     Escríbenos por Whatsapp
                   </a>
                 </div>
