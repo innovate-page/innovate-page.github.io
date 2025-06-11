@@ -3,7 +3,7 @@ layout: page_nosotros
 page_header:
   enable: true
   title: "¿Qué ofrecemos?"
-  background_image: "/assets/images/art/servicios_v2.jpeg"
+  background_image: "/assets/images/art/servicios.webp"
   image_class: "grayscale-image"
 
 que_ofrecemos:
@@ -274,7 +274,7 @@ services_area:
     {% endif %}
     <!-- FIN - if page.servicios.enable -->
 
-    <!-- <div class="space50"></div> -->
+    <div class="space50"></div>
 
     <!-- INI - if page.services_area.enable -->
       {% if page.services_area.enable %}
@@ -286,6 +286,9 @@ services_area:
             {% if page.services_area.sub_title %}
               <p class="lead larger">{{ page.services_area.sub_title }}</p>
             {% endif %}
+
+            <div class="space10"></div>
+
             {% if page.services_area.image %}
               <div class="mt-4">
                 <img src="{{ page.services_area.image }}" alt="Modelo de Servicio" class="img-responsiva"/>

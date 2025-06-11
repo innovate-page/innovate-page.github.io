@@ -222,7 +222,6 @@ $(document).ready(function() {
 	/*-----------------------------------------------------------------------------------*/
 	var $owlmain = $(".owl-slider-main");
 	var $owlnav = $(".owl-slider-nav");
-	//var totalslides = 10;
 	var syncedSecondary = true;
 	$owlmain
 		.owlCarousel({
@@ -254,9 +253,6 @@ $(document).ready(function() {
 		})
 		.on("changed.owl.carousel", syncPosition2);
 	function syncPosition(el) {
-		//if loop is set to false, then you have to uncomment the next line
-		//var current = el.item.index;
-		//to disable loop, comment this block
 		var count = el.item.count - 1;
 		var current = Math.round(el.item.index - el.item.count / 2 - 0.5);
 		if (current < 0) {
@@ -265,7 +261,6 @@ $(document).ready(function() {
 		if (current > count) {
 			current = 0;
 		}
-		//to this
 		$owlnav
 			.find(".owl-item")
 			.removeClass("current")
@@ -305,8 +300,6 @@ $(document).ready(function() {
 	$('.custom-owl-next').click(function () {
 		$('.owl-carousel.clients').trigger('next.owl.carousel');
 	});
-
-
 	/*-----------------------------------------------------------------------------------*/
 	/*	LIGHTGALLERY
 	/*-----------------------------------------------------------------------------------*/
